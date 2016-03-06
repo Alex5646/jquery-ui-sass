@@ -2,105 +2,60 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: .2em;
+  padding: $ui-dialog-padding;
   outline: 0;
 
   &-titlebar {
-    padding: .4em 1em;
+    padding: $ui-dialog-titlebar-padding-v $ui-dialog-titlebar-padding-h;
     position: relative;
 
     &-close {
       position: absolute;
-      right: .3em;
+      right: $ui-dialog-titlebar-padding-v;
       top: 50%;
-      width: 20px;
-      margin: -10px 0 0 0;
-      padding: 1px;
-      height: 20px;
+      width: $ui-dialog-titlebar-close-size;
+      height: $ui-dialog-titlebar-close-size;
+      margin-top: -($ui-dialog-titlebar-close-size / 2);
+      padding: $ui-dialog-titlebar-close-padding;
     }
   }
 
   &-title {
     float: left;
-    margin: .1em 0;
-    white-space: nowrap;
-    width: 90%;
+
+    // 100% - (Отцтуп справа * 2) + Размер иконки
+    width: calc(100% - #{($ui-dialog-titlebar-padding-v * 2) + $ui-dialog-titlebar-close-size});
+
+    // Обрезаю всё что не помещается в выше указанный размер
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 
   &-content {
     position: relative;
     border: 0;
-    padding: .5em 1em;
+    padding: $ui-dialog-content-padding;
     background: none;
     overflow: auto;
   }
 
   &-buttonpane {
     text-align: left;
-    border-width: 1px 0 0 0;
+    border-width: $ui-dialog-buttonpane-border-width;
     background-image: none;
-    margin-top: .5em;
-    padding: .3em 1em .5em .4em;
+    padding: $ui-dialog-buttonpane-padding;
 
     .ui-dialog-buttonset {
       float: right;
     }
 
     button {
-      margin: .5em .4em .5em 0;
       cursor: pointer;
-    }
-  }
 
-  .ui-resizable{
-    &-n {
-      height: 2px;
-      top: 0;
-    }
-
-    &-e {
-      width: 2px;
-      right: 0;
-    }
-
-    &-s {
-      height: 2px;
-      bottom: 0;
-    }
-
-    &-w {
-      width: 2px;
-      left: 0;
-    }
-
-    &-se,
-    &-sw,
-    &-ne,
-    &-nw {
-      width: 7px;
-      height: 7px;
-    }
-
-    &-se {
-      right: 0;
-      bottom: 0;
-    }
-
-    &-sw {
-      left: 0;
-      bottom: 0;
-    }
-
-    &-ne {
-      right: 0;
-      top: 0;
-    }
-
-    &-nw {
-      left: 0;
-      top: 0;
+      &:not(:last-child) {
+        margin-right: $ui-dialog-buttonpane-offset;
+      }
     }
   }
 }

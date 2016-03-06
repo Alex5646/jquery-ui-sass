@@ -1,11 +1,13 @@
 // Устанавливаю box-sizing в content-box,
-// для всех классов с префиксом "ui-",
-// для дочерних элементов в border-box
+// для всех классов с префиксом "ui-".
+//
+// Это нужно для правильного вычесления
+// размеров виджетов jquery-ui
 [class^='ui-'] {
-  @include ui-box-sizing(content-box);
-
-  & > * {
-    @include ui-box-sizing(border-box);
+  &,
+  &:after,
+  &:before {
+    box-sizing: content-box;
   }
 }
 

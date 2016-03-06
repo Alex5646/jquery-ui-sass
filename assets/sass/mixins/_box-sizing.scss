@@ -1,7 +1,0 @@
-@mixin ui-box-sizing($box-sizing) {
-  &,
-  &:after,
-  &:before {
-    box-sizing: $box-sizing;
-  }
-}
