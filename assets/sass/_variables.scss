@@ -1,3 +1,28 @@
+// -----------------------------
+// | #  | Line | Title         |
+// -----------------------------
+// | 1  | 26   | Base          |
+// | 2  | 35   | Colors        |
+// | 3  | 45   | Options       |
+// | 4  | 51   | Widgets       |
+// | 5  | 71   | States        |
+// | 6  | 99   | Icons         |
+// | 7  | 104  | Corner radius |
+// | 8  | 108  | Accordion     |
+// | 9  | 116  | Button        |
+// | 10 | 121  | Datepicker    |
+// | 11 | 138  | Dialog        |
+// | 12 | 153  | Menu          |
+// | 13 | 162  | Progressbar   |
+// | 14 | 167  | Selectable    |
+// | 15 | 171  | Selectmenu    |
+// | 16 | 183  | Slider        |
+// | 17 | 193  | Spinner       |
+// | 18 | 201  | Tabs          |
+// | 19 | 209  | Tooltip       |
+// -----------------------------
+
+
 // 1. Base
 // ---------------------------------------------------------
 $ui-border-radius: 3px !default;
@@ -21,7 +46,6 @@ $ui-text-color:   $ui-gray-darker !default;
 // ---------------------------------------------------------
 $enable-rounded:     true !default;
 $enable-shadows:     true !default;
-$enable-gradients:   false !default;
 $enable-transitions: false !default;
 
 // 4. Widgets
@@ -107,9 +131,13 @@ $ui-datepicker-title-line-height:        1.6em !default;
 $ui-datepicker-header-nav-size:          $ui-datepicker-title-line-height !default;
 
 $ui-datepicker-calendar-font-size:       0.9em !default;
+$ui-datepicker-calendar-margin-bottom:   0 0 $ui-datepicker-padding !default;
 $ui-datepicker-calendar-th-padding:      0.7em 0.3em !default;
 $ui-datepicker-calendar-td-padding:      1px !default;
 $ui-datepicker-calendar-element-padding: 0.4em 0.2em !default;
+
+$ui-datepicker-buttonpane-border-width:  $ui-border-width 0 0 0 !default;
+$ui-datepicker-buttonpane-padding:       $ui-datepicker-padding 0 0 !default;
 
 // 11. Dialog
 // ---------------------------------------------------------
@@ -125,6 +153,8 @@ $ui-dialog-content-padding:         0.5em 1em !default;
 $ui-dialog-buttonpane-border-width: $ui-border-width 0 0 0 !default;
 $ui-dialog-buttonpane-padding:      $ui-dialog-padding 0 0 !default;
 $ui-dialog-buttonpane-offset:       0.4em !default;
+
+$ui-dialog-group-table-width:       95% !default;
 
 // 12. Menu
 // ---------------------------------------------------------
@@ -166,7 +196,7 @@ $ui-slider-horizontal-height: 0.8em !default;
 $ui-slider-vertical-width:    $ui-slider-horizontal-height !default;
 $ui-slider-vertical-height:   200px !default;
 
-// 16. Spinner
+// 17. Spinner
 // ---------------------------------------------------------
 $ui-spinner-input-padding-v:  $ui-padding-v !default;
 $ui-spinner-input-padding-h:  $ui-padding-h !default;
@@ -174,7 +204,7 @@ $ui-spinner-input-padding-h:  $ui-padding-h !default;
 $ui-spinner-button-width:     1em !default;
 $ui-spinner-button-font-size: 0.5em !default;
 
-// 17. Tabs
+// 18. Tabs
 // ---------------------------------------------------------
 $ui-tabs-padding:       $ui-padding-v !default;
 
@@ -182,5 +212,9 @@ $ui-tabs-nav-padding:   $ui-tabs-padding $ui-tabs-padding 0 !default;
 $ui-tabs-nav-offset:    $ui-tabs-padding !default;
 $ui-tabs-panel-padding: 0.5em 1em !default;
 
-
+// 19. Tooltip
+// ---------------------------------------------------------
+$ui-tooltip-padding:   10px !default;
+$ui-tooltip-zindex:    1000 !default;
+$ui-tooltip-max-width: 300px !default;
 
