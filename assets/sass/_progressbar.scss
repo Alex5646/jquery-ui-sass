@@ -4,7 +4,7 @@
   overflow: hidden;
 
   &-value {
-    margin: $ui-widget-border-width;
+    margin: -$ui-widget-border-width;
     height: 100%;
   }
 

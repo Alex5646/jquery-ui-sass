@@ -852,11 +852,9 @@
     padding: 0.4em 1em;
     border: 1px solid transparent; }
   .ui-menu-divider {
-    margin: 5px 0;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    border-width: 1px 0 0 0; }
+    margin: 0.8em 0;
+    border: 0;
+    border-bottom: 1px solid #dddddd; }
   .ui-menu-icon {
     float: right; }
 
@@ -865,7 +863,7 @@
   text-align: left;
   overflow: hidden; }
   .ui-progressbar-value {
-    margin: 1px;
+    margin: -1px;
     height: 100%; }
   .ui-progressbar-overlay {
     height: 100%;
@@ -939,51 +937,40 @@
   .ui-selectable-helper {
     position: absolute;
     z-index: 100;
-    border: 1px dotted black; }
+    border: 1px dotted #333333; }
 
 .ui-selectmenu-menu {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none; }
+  display: none;
+  position: absolute; }
   .ui-selectmenu-menu .ui-menu {
     overflow: auto;
-    overflow-x: hidden;
-    padding-bottom: 1px; }
+    overflow-x: hidden; }
     .ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
       font-size: 1em;
       font-weight: bold;
       line-height: 1.5;
-      padding: 2px 0.4em;
-      margin: 0.5em 0 0 0;
+      padding: 0.4em 1em;
       height: auto;
-      border: 0; }
-  .ui-selectmenu-menu-button {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    width: 14em; }
-    .ui-selectmenu-menu-button span.ui-icon {
-      right: 0.5em;
-      left: auto;
-      margin-top: -8px;
-      position: absolute;
-      top: 50%; }
-    .ui-selectmenu-menu-button span.ui-selectmenu-text {
-      text-align: left;
-      padding: 0.4em 2.1em 0.4em 1em;
-      display: block;
-      line-height: 1.4;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
+      margin: 0em 0 0.8em; }
 
 .ui-selectmenu-open {
   display: block; }
+
+.ui-selectmenu-button {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.4em 1em;
+  line-height: 1.5; }
+  .ui-selectmenu-button span.ui-icon {
+    float: right; }
+  .ui-selectmenu-button span.ui-selectmenu-text {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .ui-sortable-handle {
   -ms-touch-action: none;

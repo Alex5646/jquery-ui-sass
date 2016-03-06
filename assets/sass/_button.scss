@@ -1,7 +1,7 @@
 .ui-button {
   display: inline-block;
   position: relative;
-  padding: $ui-button-padding;
+  padding: $ui-button-padding-v $ui-button-padding-h;
   line-height: normal;
   cursor: pointer;
   vertical-align: middle;

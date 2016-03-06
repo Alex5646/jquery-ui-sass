@@ -1,25 +1,30 @@
-.ui-selectmenu-menu {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+.ui-selectmenu {
+  &-menu {
+    display: none;
+    position: absolute;
 
-  .ui-menu {
-    overflow: auto;
-    overflow-x: hidden;
-    padding-bottom: 1px;
+    .ui-menu {
+      overflow: auto;
+      overflow-x: hidden;
 
-    .ui-selectmenu-optgroup {
-      font-size: 1em;
-      font-weight: bold;
-      line-height: 1.5;
-      padding: 2px 0.4em;
-      margin: 0.5em 0 0 0;
-      height: auto;
-      border: 0;
+      .ui-selectmenu-optgroup {
+        font-size: $ui-selectmenu-optgroup-font-size;
+        font-weight: $ui-selectmenu-optgroup-font-weight;
+        line-height: $ui-selectmenu-optgroup-line-height;
+        padding: $ui-selectmenu-optgroup-padding-v $ui-selectmenu-optgroup-padding-h;
+        height: auto;
+
+        // При отсуцтвии текста отступ сверху будет не
+        // правильным, из-за внутреннего отцтупа по вертикали.
+        //
+        // Ниже решение этой проблемы.
+        margin: ($ui-menu-divider-margin-v - ($ui-selectmenu-optgroup-padding-v * 2)) 0 $ui-menu-divider-margin-v;
+      }
     }
+  }
+
+  &-open {
+    display: block;
   }
 
   &-button {
@@ -28,30 +33,20 @@
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    width: 14em;
+    padding: $ui-selectmenu-button-padding-v $ui-selectmenu-button-padding-h;
+    line-height: $ui-selectmenu-button-line-height;
 
     span {
       &.ui-icon {
-        right: 0.5em;
-        left: auto;
-        margin-top: -8px;
-        position: absolute;
-        top: 50%;
+        float: right;
       }
 
       &.ui-selectmenu-text {
         text-align: left;
-        padding: 0.4em 2.1em 0.4em 1em;
-        display: block;
-        line-height: 1.4;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
     }
   }
-}
-
-.ui-selectmenu-open {
-  display: block;
 }
