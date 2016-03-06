@@ -1,16 +1,16 @@
 .ui-progressbar {
-  height: 2em;
+  height: $ui-progressbar-height;
   text-align: left;
   overflow: hidden;
 
   &-value {
-    margin: -1px;
+    margin: $ui-widget-border-width;
     height: 100%;
   }
 
   &-overlay {
     height: 100%;
-    opacity: 0.25;
+    opacity: $ui-progressbar-overlay-opacity;
   }
 
   &-indeterminate &-value {
