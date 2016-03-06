@@ -1,0 +1,57 @@
+.ui-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  outline: none;
+
+  & & {
+    position: absolute;
+  }
+
+  &-item {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &-item-wrapper {
+    position: relative;
+    padding: 3px 1em 3px .4em;
+  }
+
+  &-divider {
+    margin: 5px 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-width: 1px 0 0 0;
+  }
+
+  .ui-state-focus,
+  .ui-state-active {
+    margin: -1px;
+  }
+
+  // icon support
+  &-icons {
+    position: relative;
+  }
+  &-icons &-item-wrapper {
+    padding-left: 2em;
+  }
+
+  // left-aligned
+  .ui-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: .2em;
+    margin: auto 0;
+  }
+
+  // right-aligned
+  &-icon {
+    left: auto;
+    right: 0;
+  }
+}

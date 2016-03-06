@@ -1,0 +1,44 @@
+// Corner radius
+@if $enable-rounded {
+  .ui-corner {
+    &-all {
+      border-radius: $ui-corner-border-radius;
+    }
+
+    &-top {
+      border-top-left-radius: $ui-corner-border-radius;
+      border-top-right-radius: $ui-corner-border-radius;
+    }
+
+    &-right {
+      border-top-right-radius: $ui-corner-border-radius;
+      border-bottom-right-radius: $ui-corner-border-radius;
+    }
+
+    &-bottom {
+      border-bottom-left-radius: $ui-corner-border-radius;
+      border-bottom-right-radius: $ui-corner-border-radius;
+    }
+
+    &-left {
+      border-top-left-radius: $ui-corner-border-radius;
+      border-bottom-left-radius: $ui-corner-border-radius;
+    }
+
+    &-tl {
+      border-top-left-radius: $ui-corner-border-radius;
+    }
+
+    &-tr {
+      border-top-right-radius: $ui-corner-border-radius;
+    }
+
+    &-bl {
+      border-bottom-left-radius: $ui-corner-border-radius;
+    }
+
+    &-br {
+      border-bottom-right-radius: $ui-corner-border-radius;
+    }
+  }
+}

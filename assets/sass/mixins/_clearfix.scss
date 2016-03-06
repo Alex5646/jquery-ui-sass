@@ -1,0 +1,12 @@
+@mixin ui-clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    border-collapse: collapse;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

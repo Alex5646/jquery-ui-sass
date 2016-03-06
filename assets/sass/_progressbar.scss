@@ -1,0 +1,19 @@
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden;
+
+  &-value {
+    margin: -1px;
+    height: 100%;
+  }
+
+  &-overlay {
+    height: 100%;
+    opacity: 0.25;
+  }
+
+  &-indeterminate &-value {
+    background-image: none;
+  }
+}

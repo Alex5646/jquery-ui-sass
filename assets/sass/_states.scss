@@ -1,0 +1,52 @@
+// Interaction states
+.ui-state {
+  &-default {
+    @include ui-state($ui-state-default-border-color, $ui-state-default-background, $ui-state-default-color);
+  }
+
+  &-hover {
+    @include ui-state($ui-state-hover-border-color, $ui-state-hover-background, $ui-state-hover-color);
+  }
+
+  &-focus {
+    @include ui-state($ui-state-focus-border-color, $ui-state-focus-background, $ui-state-focus-color);
+  }
+
+  &-active {
+    @include ui-state($ui-state-active-border-color, $ui-state-active-background, $ui-state-active-color);
+  }
+
+  // Interaction Cues
+  &-highlight {
+    @include ui-state($ui-state-highlight-border-color, $ui-state-highlight-background, $ui-state-highlight-color);
+  }
+
+  &-error {
+    @include ui-state($ui-state-error-border-color, $ui-state-error-background, $ui-state-error-color);
+  }
+
+  &-disabled {
+    cursor: default !important;
+    pointer-events: none;
+
+    @include ui-state-container {
+      opacity: 0.35;
+      background-image: none;
+    }
+  }
+}
+
+.ui-priority {
+  &-primary {
+    @include ui-state-container {
+      font-weight: bold;
+    }
+  }
+
+  &-secondary {
+    @include ui-state-container {
+      opacity: 0.7;
+      font-weight: normal;
+    }
+  }
+}

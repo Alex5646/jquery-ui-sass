@@ -1,0 +1,54 @@
+.ui-widget {
+  font-family: $ui-widget-font-family;
+  font-size: $ui-widget-font-size;
+
+  & & {
+    font-size: $ui-widget-font-size;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-family: $ui-widget-font-family;
+    font-size: $ui-widget-font-size;
+  }
+
+  &-content {
+    border: $ui-widget-border-width solid $ui-widget-content-border-color;
+    background: $ui-widget-content-background;
+    color: $ui-widget-content-color;
+
+    a {
+      color: $ui-widget-content-color;
+    }
+  }
+
+  &-header {
+    border: $ui-widget-border-width solid $ui-widget-header-border-color;
+    background: $ui-widget-header-background;
+    color: $ui-widget-header-color;
+    font-weight: $ui-widget-header-font-weight;
+
+    a {
+      color: $ui-widget-header-color;
+    }
+  }
+
+  // Overlays
+  &-overlay {
+    background: $ui-widget-overlay-background;
+    opacity: $ui-widget-overlay-opacity;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @if $enable-shadows {
+    &-shadow {
+      box-shadow: $ui-widget-shadow;
+    }
+  }
+}

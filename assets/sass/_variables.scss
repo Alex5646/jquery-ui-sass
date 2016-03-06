@@ -1,0 +1,86 @@
+// 1. Base
+//---------------------------------------------------------
+$ui-border-radius: 3px !default;
+$ui-border-width:  1px !default;
+$ui-font-family:   Arial, Helvetica, sans-serif !default;
+$ui-font-size:     1em !default;
+
+// 2. Colors
+//---------------------------------------------------------
+$ui-gray-darker:  #333333 !default;
+$ui-gray-dark:    #666666 !default;
+$ui-gray:         #aaaaaa !default;
+$ui-gray-light:   #dddddd !default;
+$ui-gray-lighter: #e9e9e9 !default;
+
+$ui-text-color:   $ui-gray-darker !default;
+
+// 3. Options
+//---------------------------------------------------------
+$enable-rounded:     true !default;
+$enable-shadows:     true !default;
+$enable-gradients:   false !default;
+$enable-transitions: false !default;
+
+// 4. Widgets
+//---------------------------------------------------------
+$ui-widget-border-width:         $ui-border-width !default;
+$ui-widget-font-family:          $ui-font-family !default;
+$ui-widget-font-size:            $ui-font-size !default;
+
+$ui-widget-content-border-color: $ui-gray-light !default;
+$ui-widget-content-background:   #ffffff !default;
+$ui-widget-content-color:        $ui-text-color !default;
+
+$ui-widget-header-border-color:  $ui-gray-light !default;
+$ui-widget-header-background:    $ui-gray-lighter !default;
+$ui-widget-header-color:         $ui-text-color !default;
+$ui-widget-header-font-weight:   600 !default;
+
+$ui-widget-overlay-background:   $ui-gray !default;
+$ui-widget-overlay-opacity:      0.3 !default;
+
+$ui-widget-shadow:               0 0 5px $ui-gray-dark !default;
+
+// 5. States
+//---------------------------------------------------------
+$ui-states-border-width: $ui-border-width !default;
+
+$ui-state-default-border-color:   #c5c5c5 !default;
+$ui-state-default-background:     #f6f6f6 !default;
+$ui-state-default-color:          #454545 !default;
+
+$ui-state-hover-border-color:     #cccccc !default;
+$ui-state-hover-background:       #ededed !default;
+$ui-state-hover-color:            #2b2b2b !default;
+
+$ui-state-focus-border-color:     $ui-state-hover-border-color !default;
+$ui-state-focus-background:       $ui-state-hover-background !default;
+$ui-state-focus-color:            $ui-state-hover-color !default;
+
+$ui-state-active-border-color:    #003eff !default;
+$ui-state-active-background:      #007fff !default;
+$ui-state-active-color:           #ffffff !default;
+
+$ui-state-highlight-border-color: #dad55e !default;
+$ui-state-highlight-background:   #fffa90 !default;
+$ui-state-highlight-color:        #777620 !default;
+
+$ui-state-error-border-color:     #f1a899 !default;
+$ui-state-error-background:       #fddfdf !default;
+$ui-state-error-color:            #5f3f3f !default;
+
+// 6. Icons
+//---------------------------------------------------------
+$ui-icon-font-path: '../fonts/' !default;
+$ui-icon-font-name: 'jquery-ui-icons' !default;
+
+// 7. Corner radius
+//---------------------------------------------------------
+$ui-corner-border-radius: $ui-border-radius !default;
+
+// 8. Accordion
+//---------------------------------------------------------
+
+
+
