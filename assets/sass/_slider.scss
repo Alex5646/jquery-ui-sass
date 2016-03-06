@@ -5,33 +5,28 @@
   &-handle {
     position: absolute;
     z-index: 2;
-    width: 1.2em;
-    height: 1.2em;
-    cursor: default;
+    width: $ui-slider-handle-size;
+    height: $ui-slider-handle-size;
+    cursor: pointer;
     touch-action: none;
   }
 
   &-range {
     position: absolute;
     z-index: 1;
-    font-size: .7em;
+    font-size: $ui-slider-range-font-size;
     display: block;
     border: 0;
     background-position: 0 0;
   }
 
-  // support: IE8 - See #6727
-  &.ui-state-disabled &-handle,
-  &.ui-state-disabled &-range {
-    filter: inherit;
-  }
-
   &-horizontal {
-    height: .8em;
+    height: $ui-slider-horizontal-height;
 
     .ui-slider-handle {
-      top: -.3em;
-      margin-left: -.6em;
+      // Автоматическое позиционирование
+      top: ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - $ui-border-width;
+      margin-left: $ui-slider-handle-size / -2;
     }
 
     .ui-slider-range {
@@ -46,29 +41,30 @@
     .ui-slider-range-max {
       right: 0;
     }
+  }
 
-    &-vertical {
-      width: .8em;
-      height: 100px;
+  &-vertical {
+    width: $ui-slider-vertical-width;
+    height: $ui-slider-vertical-height;
 
-      .ui-slider-handle {
-        left: -.3em;
-        margin-left: 0;
-        margin-bottom: -.6em;
-      }
+    .ui-slider-handle {
+      // Автоматическое позиционирование
+      left: ($ui-slider-vertical-width - $ui-slider-handle-size) / 2 - $ui-border-width;
+      margin-left: 0;
+      margin-bottom: $ui-slider-handle-size / -2;
+    }
 
-      .ui-slider-range {
-        left: 0;
-        width: 100%;
-      }
+    .ui-slider-range {
+      left: 0;
+      width: 100%;
+    }
 
-      .ui-slider-range-min {
-        bottom: 0;
-      }
+    .ui-slider-range-min {
+      bottom: 0;
+    }
 
-      .ui-slider-range-max {
-        top: 0;
-      }
+    .ui-slider-range-max {
+      top: 0;
     }
   }
 }
