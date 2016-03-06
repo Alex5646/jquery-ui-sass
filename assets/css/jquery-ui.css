@@ -678,6 +678,7 @@
     padding: 0.4em 0.4em; }
   .ui-datepicker-prev, .ui-datepicker-next {
     position: absolute;
+    border: 1px solid transparent;
     top: 0.4em;
     width: 1.6em;
     height: 1.6em; }
@@ -772,15 +773,9 @@
   .ui-datepicker-rtl .ui-datepicker-prev {
     right: 2px;
     left: auto; }
-    .ui-datepicker-rtl .ui-datepicker-prev:hover {
-      right: 1px;
-      left: auto; }
   .ui-datepicker-rtl .ui-datepicker-next {
     left: 2px;
     right: auto; }
-    .ui-datepicker-rtl .ui-datepicker-next:hover {
-      left: 1px;
-      right: auto; }
   .ui-datepicker-rtl .ui-datepicker-buttonpane {
     clear: right; }
     .ui-datepicker-rtl .ui-datepicker-buttonpane button {
@@ -845,7 +840,8 @@
   padding: 0;
   margin: 0;
   display: block;
-  outline: none; }
+  outline: none;
+  min-width: 7.5em; }
   .ui-menu .ui-menu {
     position: absolute; }
   .ui-menu-item {
@@ -853,36 +849,23 @@
     cursor: pointer; }
   .ui-menu-item-wrapper {
     position: relative;
-    padding: 3px 1em 3px .4em; }
+    padding: 0.4em 1em;
+    border: 1px solid transparent; }
   .ui-menu-divider {
     margin: 5px 0;
     height: 0;
     font-size: 0;
     line-height: 0;
     border-width: 1px 0 0 0; }
-  .ui-menu .ui-state-focus,
-  .ui-menu .ui-state-active {
-    margin: -1px; }
-  .ui-menu-icons {
-    position: relative; }
-  .ui-menu-icons .ui-menu-item-wrapper {
-    padding-left: 2em; }
-  .ui-menu .ui-icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: .2em;
-    margin: auto 0; }
   .ui-menu-icon {
-    left: auto;
-    right: 0; }
+    float: right; }
 
 .ui-progressbar {
   height: 2em;
   text-align: left;
   overflow: hidden; }
   .ui-progressbar-value {
-    margin: -1px;
+    margin: 1px;
     height: 100%; }
   .ui-progressbar-overlay {
     height: 100%;
@@ -977,8 +960,6 @@
       margin: 0.5em 0 0 0;
       height: auto;
       border: 0; }
-  .ui-selectmenu-menu-open {
-    display: block; }
   .ui-selectmenu-menu-button {
     display: inline-block;
     overflow: hidden;
@@ -1000,6 +981,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+
+.ui-selectmenu-open {
+  display: block; }
 
 .ui-sortable-handle {
   -ms-touch-action: none;

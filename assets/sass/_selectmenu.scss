@@ -22,10 +22,6 @@
     }
   }
 
-  &-open {
-    display: block;
-  }
-
   &-button {
     display: inline-block;
     overflow: hidden;
@@ -54,4 +50,8 @@
       }
     }
   }
+}
+
+.ui-selectmenu-open {
+  display: block;
 }

@@ -11,6 +11,7 @@
   &-prev,
   &-next {
     position: absolute;
+    border: $ui-border-width solid transparent;
     top: $ui-datepicker-header-padding-h;
     width: $ui-datepicker-header-nav-size;
     height: $ui-datepicker-header-nav-size;
@@ -149,21 +150,11 @@
     &-prev {
       right: 2px;
       left: auto;
-
-      &:hover {
-        right: 1px;
-        left: auto;
-      }
     }
 
     &-next {
       left: 2px;
       right: auto;
-
-      &:hover {
-        left: 1px;
-        right: auto;
-      }
     }
 
     &-buttonpane {

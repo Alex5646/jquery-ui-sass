@@ -121,8 +121,20 @@ $ui-dialog-titlebar-close-padding:  1px !default;
 
 $ui-dialog-content-padding:         0.5em 1em !default;
 
-$ui-dialog-buttonpane-border-width: 1px 0 0 0 !default;
+$ui-dialog-buttonpane-border-width: $ui-border-width 0 0 0 !default;
 $ui-dialog-buttonpane-padding:      $ui-dialog-padding 0 0 !default;
 $ui-dialog-buttonpane-offset:       0.4em !default;
 
+// 12. Menu
+// ---------------------------------------------------------
+$ui-menu-min-width:            7.5em !default;
+$ui-menu-item-wrapper-padding: $ui-padding-v $ui-padding-h !default;
+
+$ui-menu-divider-margin:       5px 0 !default;
+$ui-menu-divider-border-width: $ui-border-width 0 0 0 !default;
+
+// 13. Progressbar
+// ---------------------------------------------------------
+$ui-progressbar-height: 2em !default;
+$ui-progressbar-overlay-opacity: 0.25 !default;
 
