@@ -228,6 +228,7 @@
 
 .ui-icon {
   display: inline-block;
+  font-size: 0;
   width: 16px;
   height: 16px;
   background: url(../img/ui-icons.png); }
@@ -644,17 +645,8 @@
   .ui-button, .ui-button:link, .ui-button:visited, .ui-button:hover, .ui-button:active {
     text-decoration: none; }
 
-.ui-button-icon-only {
-  width: 2.2em; }
-
-button.ui-button-icon-only {
-  width: 2.4em; }
-
-.ui-button-icons-only {
-  width: 3.4em; }
-
-button.ui-button-icons-only {
-  width: 3.7em; }
+.ui-button-icon-only .ui-button-text {
+  display: none; }
 
 .ui-buttonset:before, .ui-buttonset:after {
   content: '';
@@ -727,7 +719,7 @@ button.ui-button-icons-only {
     .ui-datepicker td a {
       display: block;
       padding: .2em;
-      text-align: right;
+      text-align: center;
       text-decoration: none; }
   .ui-datepicker-buttonpane {
     background-image: none;
