@@ -4,6 +4,6 @@
   &-helper {
     position: absolute;
     z-index: 100;
-    border: 1px dotted black;
+    border: $ui-selectable-border;
   }
 }

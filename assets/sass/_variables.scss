@@ -135,6 +135,12 @@ $ui-menu-divider-border-width: $ui-border-width 0 0 0 !default;
 
 // 13. Progressbar
 // ---------------------------------------------------------
-$ui-progressbar-height: 2em !default;
+$ui-progressbar-height:          2em !default;
 $ui-progressbar-overlay-opacity: 0.25 !default;
+
+// 14. Selectable
+// ---------------------------------------------------------
+$ui-selectable-border: $ui-border-width dotted $ui-gray-darker !default;
+
+
 
