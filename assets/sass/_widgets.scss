@@ -13,7 +13,7 @@
 
 .ui-widget {
   font-family: $ui-widget-font-family;
-  font-size: $ui-widget-font-size;
+  @include ui-font($ui-widget-font-size, $ui-widget-line-height, $ui-widget-font-weight);
 
   & & {
     font-size: $ui-widget-font-size;

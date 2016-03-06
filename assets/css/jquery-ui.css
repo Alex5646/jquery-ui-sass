@@ -44,7 +44,9 @@
 
 .ui-widget {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400; }
   .ui-widget .ui-widget {
     font-size: 1em; }
   .ui-widget input,
@@ -627,7 +629,9 @@
   position: relative;
   margin: 2px 0 0 0;
   padding: 0.4em 1em;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400; }
 
 .ui-accordion-content {
   padding: 1em 2.2em;
@@ -644,11 +648,15 @@
   display: inline-block;
   position: relative;
   padding: 0.4em 1em;
-  line-height: normal;
   cursor: pointer;
   vertical-align: middle;
   text-align: center;
-  overflow: visible; }
+  overflow: visible;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400; }
   .ui-button, .ui-button:link, .ui-button:visited, .ui-button:hover, .ui-button:active {
     text-decoration: none; }
 
@@ -680,8 +688,8 @@
     position: absolute;
     border: 0.08em solid transparent;
     top: 0.4em;
-    width: 1.6em;
-    height: 1.6em; }
+    width: 1.5;
+    height: 1.5; }
   .ui-datepicker-prev {
     left: 0.4em; }
   .ui-datepicker-next {
@@ -695,14 +703,16 @@
     top: 50%;
     margin-top: -8px; }
   .ui-datepicker-title {
-    line-height: 1.6em;
-    text-align: center; }
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400; }
     .ui-datepicker-title select {
       font-size: 1em;
       margin: 1px 0; }
   .ui-datepicker select.ui-datepicker-month,
   .ui-datepicker select.ui-datepicker-year {
-    width: calc(50% - 2.4em);
+    width: calc(50% - 2.3em);
     font-weight: normal; }
   .ui-datepicker table {
     width: 100%;
@@ -1035,7 +1045,10 @@
     padding: 0.4em 1em;
     vertical-align: middle;
     box-sizing: border-box;
-    width: calc(100% - 1em); }
+    width: calc(100% - 1em);
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400; }
   .ui-spinner-button {
     width: 1em;
     height: 50%;
@@ -1070,7 +1083,7 @@
     padding: 0.4em 0.4em 0; }
     .ui-tabs-nav .ui-tabs-anchor {
       float: left;
-      padding: .5em 1em;
+      padding: 0.5em 1em;
       text-decoration: none; }
   .ui-tabs-tab {
     list-style: none;

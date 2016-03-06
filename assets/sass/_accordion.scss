@@ -5,7 +5,7 @@
     position: relative;
     margin: $ui-accordion-header-margin;
     padding: $ui-accordion-header-padding;
-    font-size: $ui-accordion-font-size;
+    @include ui-font($ui-accordion-font-size, $ui-accordion-line-height, $ui-accordion-font-weight);
   }
 
   &-content {

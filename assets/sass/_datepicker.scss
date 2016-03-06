@@ -36,11 +36,11 @@
   }
 
   &-title {
-    line-height: $ui-datepicker-title-line-height;
     text-align: center;
+    @include ui-font($ui-datepicker-title-font-size, $ui-datepicker-title-line-height, $ui-datepicker-title-font-weight);
 
     select {
-      font-size: 1em;
+      font-size: $ui-font-size;
       margin: 1px 0;
     }
   }

@@ -1,25 +1,25 @@
 // -----------------------------
 // | #  | Line | Title         |
 // -----------------------------
-// | 1  | 26   | Base          |
-// | 2  | 35   | Colors        |
-// | 3  | 45   | Options       |
-// | 4  | 51   | Widgets       |
-// | 5  | 71   | States        |
-// | 6  | 99   | Icons         |
-// | 7  | 104  | Corner radius |
-// | 8  | 108  | Accordion     |
-// | 9  | 116  | Button        |
-// | 10 | 121  | Datepicker    |
-// | 11 | 138  | Dialog        |
-// | 12 | 153  | Menu          |
-// | 13 | 162  | Progressbar   |
-// | 14 | 167  | Selectable    |
-// | 15 | 171  | Selectmenu    |
-// | 16 | 183  | Slider        |
-// | 17 | 193  | Spinner       |
-// | 18 | 201  | Tabs          |
-// | 19 | 209  | Tooltip       |
+// | 1  |      | Base          |
+// | 2  |      | Colors        |
+// | 3  |      | Options       |
+// | 4  |      | Widgets       |
+// | 5  |      | States        |
+// | 6  |      | Icons         |
+// | 7  |      | Corner radius |
+// | 8  |      | Accordion     |
+// | 9  |      | Button        |
+// | 10 |      | Datepicker    |
+// | 11 |      | Dialog        |
+// | 12 |      | Menu          |
+// | 13 |      | Progressbar   |
+// | 14 |      | Selectable    |
+// | 15 |      | Selectmenu    |
+// | 16 |      | Slider        |
+// | 17 |      | Spinner       |
+// | 18 |      | Tabs          |
+// | 19 |      | Tooltip       |
 // -----------------------------
 
 
@@ -29,6 +29,8 @@ $ui-border-radius: 3px !default;
 $ui-border-width:  0.08em !default;
 $ui-font-family:   Arial, Helvetica, sans-serif !default;
 $ui-font-size:     1em !default;
+$ui-line-height:   1.5 !default;
+$ui-font-weight:   400 !default;
 $ui-padding-v:     0.4em !default; // v - vertical
 $ui-padding-h:     1em !default; // h - horizontal
 
@@ -53,6 +55,8 @@ $enable-transitions: false !default;
 $ui-widget-border-width:         $ui-border-width !default;
 $ui-widget-font-family:          $ui-font-family !default;
 $ui-widget-font-size:            $ui-font-size !default;
+$ui-widget-line-height:          $ui-line-height !default;
+$ui-widget-font-weight:          $ui-font-weight !default;
 
 $ui-widget-content-border-color: $ui-gray-light !default;
 $ui-widget-content-background:   #ffffff !default;
@@ -110,13 +114,18 @@ $ui-corner-border-radius: $ui-border-radius !default;
 $ui-accordion-header-margin:   2px 0 0 0 !default;
 $ui-accordion-header-padding:  $ui-padding-v $ui-padding-h !default;
 $ui-accordion-font-size:       $ui-font-size !default;
+$ui-accordion-line-height:     $ui-line-height !default;
+$ui-accordion-font-weight:     $ui-font-weight !default;
 
 $ui-accordion-content-padding: 1em 2.2em !default;
 
 // 9. Button
 // ---------------------------------------------------------
-$ui-button-padding-v: $ui-padding-v !default;
-$ui-button-padding-h: $ui-padding-h !default;
+$ui-button-padding-v:   $ui-padding-v !default;
+$ui-button-padding-h:   $ui-padding-h !default;
+$ui-button-font-size:   $ui-font-size !default;
+$ui-button-line-height: $ui-line-height !default;
+$ui-button-font-weight: $ui-font-weight !default;
 
 // 10. Datepicker
 // ---------------------------------------------------------
@@ -126,7 +135,9 @@ $ui-datepicker-padding:                  $ui-padding-v !default;
 $ui-datepicker-header-padding-v:         $ui-padding-v !default;
 $ui-datepicker-header-padding-h:         $ui-padding-v !default;
 
-$ui-datepicker-title-line-height:        1.6em !default;
+$ui-datepicker-title-font-size:          $ui-font-size !default;
+$ui-datepicker-title-line-height:        $ui-line-height !default;
+$ui-datepicker-title-font-weight:        $ui-font-weight !default;
 
 $ui-datepicker-header-nav-size:          $ui-datepicker-title-line-height !default;
 
@@ -198,19 +209,26 @@ $ui-slider-vertical-height:   200px !default;
 
 // 17. Spinner
 // ---------------------------------------------------------
-$ui-spinner-input-padding-v:  $ui-padding-v !default;
-$ui-spinner-input-padding-h:  $ui-padding-h !default;
+$ui-spinner-input-padding-v:   $ui-padding-v !default;
+$ui-spinner-input-padding-h:   $ui-padding-h !default;
+$ui-spinner-input-color:       inherit !default;
+$ui-spinner-input-font-size:   $ui-font-size !default;
+$ui-spinner-input-line-height: $ui-line-height !default;
+$ui-spinner-input-font-weight: $ui-font-weight !default;
 
-$ui-spinner-button-width:     1em !default;
-$ui-spinner-button-font-size: 0.5em !default;
+$ui-spinner-button-width:      1em !default;
+$ui-spinner-button-font-size:  0.5em !default;
 
 // 18. Tabs
 // ---------------------------------------------------------
-$ui-tabs-padding:       $ui-padding-v !default;
+$ui-tabs-padding:        $ui-padding-v !default;
 
-$ui-tabs-nav-padding:   $ui-tabs-padding $ui-tabs-padding 0 !default;
-$ui-tabs-nav-offset:    $ui-tabs-padding !default;
-$ui-tabs-panel-padding: 0.5em 1em !default;
+$ui-tabs-nav-padding:    $ui-tabs-padding $ui-tabs-padding 0 !default;
+$ui-tabs-nav-offset:     $ui-tabs-padding !default;
+
+$ui-tabs-anchor-padding: 0.5em 1em !default;
+
+$ui-tabs-panel-padding:  0.5em 1em !default;
 
 // 19. Tooltip
 // ---------------------------------------------------------
