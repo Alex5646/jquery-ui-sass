@@ -1,3 +1,14 @@
+// Устанавливаю box-sizing в content-box,
+// для всех классов с префиксом "ui-",
+// для дочерних элементов в border-box
+[class^='ui-'] {
+  @include ui-box-sizing(content-box);
+
+  & > * {
+    @include ui-box-sizing(border-box);
+  }
+}
+
 .ui-widget {
   font-family: $ui-widget-font-family;
   font-size: $ui-widget-font-size;

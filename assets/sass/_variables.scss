@@ -95,7 +95,17 @@ $ui-button-padding: $ui-padding-v $ui-padding-h !default;
 
 // 10. Datepicker
 //---------------------------------------------------------
+$ui-datepicker-width:   17em !default;
+$ui-datepicker-padding: $ui-padding-v !default;
 
+$ui-datepicker-header-padding: $ui-padding-v !default;
 
+$ui-datepicker-title-line-height: 1.6em !default;
 
+$ui-datepicker-header-nav-size:   $ui-datepicker-title-line-height !default;
+
+$ui-datepicker-calendar-font-size: 0.9em !default;
+$ui-datepicker-calendar-th-padding: 0.7em 0.3em !default;
+$ui-datepicker-calendar-td-padding: 1px !default;
+$ui-datepicker-calendar-element-padding: 0.4em 0.2em !default;
 

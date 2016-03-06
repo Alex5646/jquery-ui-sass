@@ -1,39 +1,27 @@
 .ui-datepicker {
-  width: 17em;
-  padding: .2em .2em 0;
+  width: $ui-datepicker-width;
+  padding: $ui-datepicker-padding;
   display: none;
 
   &-header {
     position: relative;
-    padding: .2em 0;
+    padding: $ui-datepicker-header-padding;
   }
 
   &-prev,
   &-next {
     position: absolute;
-    top: 2px;
-    width: 1.8em;
-    height: 1.8em;
-
-    &-hover {
-      top: 1px;
-    }
+    top: $ui-datepicker-header-padding;
+    width: $ui-datepicker-header-nav-size;
+    height: $ui-datepicker-header-nav-size;
   }
 
   &-prev {
-    left: 2px;
-
-    &-hover {
-      left: 1px;
-    }
+    left: $ui-datepicker-header-padding;
   }
 
   &-next {
-    right: 2px;
-
-    &-hover {
-      right: 1px;
-    }
+    right: $ui-datepicker-header-padding;
   }
 
   &-prev span,
@@ -47,8 +35,7 @@
   }
 
   &-title {
-    margin: 0 2.3em;
-    line-height: 1.8em;
+    line-height: $ui-datepicker-title-line-height;
     text-align: center;
 
     select {
@@ -64,13 +51,12 @@
 
   table {
     width: 100%;
-    font-size: .9em;
+    font-size: $ui-datepicker-calendar-font-size;
     border-collapse: collapse;
-    margin: 0 0 .4em;
   }
 
   th {
-    padding: .7em .3em;
+    padding: $ui-datepicker-calendar-th-padding;
     text-align: center;
     font-weight: bold;
     border: 0;
@@ -78,12 +64,13 @@
 
   td {
     border: 0;
-    padding: 1px;
+    width: percentage(1 / 7);
+    padding: $ui-datepicker-calendar-td-padding;
 
     span,
     a {
       display: block;
-      padding: .2em;
+      padding: $ui-datepicker-calendar-element-padding;
       text-align: center;
       text-decoration: none;
     }

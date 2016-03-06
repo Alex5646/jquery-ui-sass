@@ -39,6 +39,12 @@
 .ui-front {
   z-index: 100; }
 
+[class^='ui-'], [class^='ui-']:after, [class^='ui-']:before {
+  box-sizing: content-box; }
+
+[class^='ui-'] > *, [class^='ui-'] > *:after, [class^='ui-'] > *:before {
+  box-sizing: border-box; }
+
 .ui-widget {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em; }
@@ -228,359 +234,363 @@
 
 .ui-icon {
   display: inline-block;
-  font-size: 0;
-  width: 16px;
-  height: 16px;
-  background: url(../img/ui-icons.png); }
-  .ui-icon-blank {
+  font-size: 0; }
+  .ui-icon:before {
+    font-size: inherit;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background: url(../img/ui-icons.png); }
+  .ui-icon-blank:before {
     background-position: 16px 16px; }
-  .ui-icon-caret-1-n {
+  .ui-icon-caret-1-n:before {
     background-position: 0 0; }
-  .ui-icon-caret-1-ne {
+  .ui-icon-caret-1-ne:before {
     background-position: -16px 0; }
-  .ui-icon-caret-1-e {
+  .ui-icon-caret-1-e:before {
     background-position: -32px 0; }
-  .ui-icon-caret-1-se {
+  .ui-icon-caret-1-se:before {
     background-position: -48px 0; }
-  .ui-icon-caret-1-s {
+  .ui-icon-caret-1-s:before {
     background-position: -64px 0; }
-  .ui-icon-caret-1-sw {
+  .ui-icon-caret-1-sw:before {
     background-position: -80px 0; }
-  .ui-icon-caret-1-w {
+  .ui-icon-caret-1-w:before {
     background-position: -96px 0; }
-  .ui-icon-caret-1-nw {
+  .ui-icon-caret-1-nw:before {
     background-position: -112px 0; }
-  .ui-icon-caret-2-n-s {
+  .ui-icon-caret-2-n-s:before {
     background-position: -128px 0; }
-  .ui-icon-caret-2-e-w {
+  .ui-icon-caret-2-e-w:before {
     background-position: -144px 0; }
-  .ui-icon-triangle-1-n {
+  .ui-icon-triangle-1-n:before {
     background-position: 0 -16px; }
-  .ui-icon-triangle-1-ne {
+  .ui-icon-triangle-1-ne:before {
     background-position: -16px -16px; }
-  .ui-icon-triangle-1-e {
+  .ui-icon-triangle-1-e:before {
     background-position: -32px -16px; }
-  .ui-icon-triangle-1-se {
+  .ui-icon-triangle-1-se:before {
     background-position: -48px -16px; }
-  .ui-icon-triangle-1-s {
+  .ui-icon-triangle-1-s:before {
     background-position: -64px -16px; }
-  .ui-icon-triangle-1-sw {
+  .ui-icon-triangle-1-sw:before {
     background-position: -80px -16px; }
-  .ui-icon-triangle-1-w {
+  .ui-icon-triangle-1-w:before {
     background-position: -96px -16px; }
-  .ui-icon-triangle-1-nw {
+  .ui-icon-triangle-1-nw:before {
     background-position: -112px -16px; }
-  .ui-icon-triangle-2-n-s {
+  .ui-icon-triangle-2-n-s:before {
     background-position: -128px -16px; }
-  .ui-icon-triangle-2-e-w {
+  .ui-icon-triangle-2-e-w:before {
     background-position: -144px -16px; }
-  .ui-icon-arrow-1-n {
+  .ui-icon-arrow-1-n:before {
     background-position: 0 -32px; }
-  .ui-icon-arrow-1-ne {
+  .ui-icon-arrow-1-ne:before {
     background-position: -16px -32px; }
-  .ui-icon-arrow-1-e {
+  .ui-icon-arrow-1-e:before {
     background-position: -32px -32px; }
-  .ui-icon-arrow-1-se {
+  .ui-icon-arrow-1-se:before {
     background-position: -48px -32px; }
-  .ui-icon-arrow-1-s {
+  .ui-icon-arrow-1-s:before {
     background-position: -64px -32px; }
-  .ui-icon-arrow-1-sw {
+  .ui-icon-arrow-1-sw:before {
     background-position: -80px -32px; }
-  .ui-icon-arrow-1-w {
+  .ui-icon-arrow-1-w:before {
     background-position: -96px -32px; }
-  .ui-icon-arrow-1-nw {
+  .ui-icon-arrow-1-nw:before {
     background-position: -112px -32px; }
-  .ui-icon-arrow-2-n-s {
+  .ui-icon-arrow-2-n-s:before {
     background-position: -128px -32px; }
-  .ui-icon-arrow-2-ne-sw {
+  .ui-icon-arrow-2-ne-sw:before {
     background-position: -144px -32px; }
-  .ui-icon-arrow-2-e-w {
+  .ui-icon-arrow-2-e-w:before {
     background-position: -160px -32px; }
-  .ui-icon-arrow-2-se-nw {
+  .ui-icon-arrow-2-se-nw:before {
     background-position: -176px -32px; }
-  .ui-icon-arrowstop-1-n {
+  .ui-icon-arrowstop-1-n:before {
     background-position: -192px -32px; }
-  .ui-icon-arrowstop-1-e {
+  .ui-icon-arrowstop-1-e:before {
     background-position: -208px -32px; }
-  .ui-icon-arrowstop-1-s {
+  .ui-icon-arrowstop-1-s:before {
     background-position: -224px -32px; }
-  .ui-icon-arrowstop-1-w {
+  .ui-icon-arrowstop-1-w:before {
     background-position: -240px -32px; }
-  .ui-icon-arrowthick-1-n {
+  .ui-icon-arrowthick-1-n:before {
     background-position: 0 -48px; }
-  .ui-icon-arrowthick-1-ne {
+  .ui-icon-arrowthick-1-ne:before {
     background-position: -16px -48px; }
-  .ui-icon-arrowthick-1-e {
+  .ui-icon-arrowthick-1-e:before {
     background-position: -32px -48px; }
-  .ui-icon-arrowthick-1-se {
+  .ui-icon-arrowthick-1-se:before {
     background-position: -48px -48px; }
-  .ui-icon-arrowthick-1-s {
+  .ui-icon-arrowthick-1-s:before {
     background-position: -64px -48px; }
-  .ui-icon-arrowthick-1-sw {
+  .ui-icon-arrowthick-1-sw:before {
     background-position: -80px -48px; }
-  .ui-icon-arrowthick-1-w {
+  .ui-icon-arrowthick-1-w:before {
     background-position: -96px -48px; }
-  .ui-icon-arrowthick-1-nw {
+  .ui-icon-arrowthick-1-nw:before {
     background-position: -112px -48px; }
-  .ui-icon-arrowthick-2-n-s {
+  .ui-icon-arrowthick-2-n-s:before {
     background-position: -128px -48px; }
-  .ui-icon-arrowthick-2-ne-sw {
+  .ui-icon-arrowthick-2-ne-sw:before {
     background-position: -144px -48px; }
-  .ui-icon-arrowthick-2-e-w {
+  .ui-icon-arrowthick-2-e-w:before {
     background-position: -160px -48px; }
-  .ui-icon-arrowthick-2-se-nw {
+  .ui-icon-arrowthick-2-se-nw:before {
     background-position: -176px -48px; }
-  .ui-icon-arrowthickstop-1-n {
+  .ui-icon-arrowthickstop-1-n:before {
     background-position: -192px -48px; }
-  .ui-icon-arrowthickstop-1-e {
+  .ui-icon-arrowthickstop-1-e:before {
     background-position: -208px -48px; }
-  .ui-icon-arrowthickstop-1-s {
+  .ui-icon-arrowthickstop-1-s:before {
     background-position: -224px -48px; }
-  .ui-icon-arrowthickstop-1-w {
+  .ui-icon-arrowthickstop-1-w:before {
     background-position: -240px -48px; }
-  .ui-icon-arrowreturnthick-1-w {
+  .ui-icon-arrowreturnthick-1-w:before {
     background-position: 0 -64px; }
-  .ui-icon-arrowreturnthick-1-n {
+  .ui-icon-arrowreturnthick-1-n:before {
     background-position: -16px -64px; }
-  .ui-icon-arrowreturnthick-1-e {
+  .ui-icon-arrowreturnthick-1-e:before {
     background-position: -32px -64px; }
-  .ui-icon-arrowreturnthick-1-s {
+  .ui-icon-arrowreturnthick-1-s:before {
     background-position: -48px -64px; }
-  .ui-icon-arrowreturn-1-w {
+  .ui-icon-arrowreturn-1-w:before {
     background-position: -64px -64px; }
-  .ui-icon-arrowreturn-1-n {
+  .ui-icon-arrowreturn-1-n:before {
     background-position: -80px -64px; }
-  .ui-icon-arrowreturn-1-e {
+  .ui-icon-arrowreturn-1-e:before {
     background-position: -96px -64px; }
-  .ui-icon-arrowreturn-1-s {
+  .ui-icon-arrowreturn-1-s:before {
     background-position: -112px -64px; }
-  .ui-icon-arrowrefresh-1-w {
+  .ui-icon-arrowrefresh-1-w:before {
     background-position: -128px -64px; }
-  .ui-icon-arrowrefresh-1-n {
+  .ui-icon-arrowrefresh-1-n:before {
     background-position: -144px -64px; }
-  .ui-icon-arrowrefresh-1-e {
+  .ui-icon-arrowrefresh-1-e:before {
     background-position: -160px -64px; }
-  .ui-icon-arrowrefresh-1-s {
+  .ui-icon-arrowrefresh-1-s:before {
     background-position: -176px -64px; }
-  .ui-icon-arrow-4 {
+  .ui-icon-arrow-4:before {
     background-position: 0 -80px; }
-  .ui-icon-arrow-4-diag {
+  .ui-icon-arrow-4-diag:before {
     background-position: -16px -80px; }
-  .ui-icon-extlink {
+  .ui-icon-extlink:before {
     background-position: -32px -80px; }
-  .ui-icon-newwin {
+  .ui-icon-newwin:before {
     background-position: -48px -80px; }
-  .ui-icon-refresh {
+  .ui-icon-refresh:before {
     background-position: -64px -80px; }
-  .ui-icon-shuffle {
+  .ui-icon-shuffle:before {
     background-position: -80px -80px; }
-  .ui-icon-transfer-e-w {
+  .ui-icon-transfer-e-w:before {
     background-position: -96px -80px; }
-  .ui-icon-transferthick-e-w {
+  .ui-icon-transferthick-e-w:before {
     background-position: -112px -80px; }
-  .ui-icon-folder-collapsed {
+  .ui-icon-folder-collapsed:before {
     background-position: 0 -96px; }
-  .ui-icon-folder-open {
+  .ui-icon-folder-open:before {
     background-position: -16px -96px; }
-  .ui-icon-document {
+  .ui-icon-document:before {
     background-position: -32px -96px; }
-  .ui-icon-document-b {
+  .ui-icon-document-b:before {
     background-position: -48px -96px; }
-  .ui-icon-note {
+  .ui-icon-note:before {
     background-position: -64px -96px; }
-  .ui-icon-mail-closed {
+  .ui-icon-mail-closed:before {
     background-position: -80px -96px; }
-  .ui-icon-mail-open {
+  .ui-icon-mail-open:before {
     background-position: -96px -96px; }
-  .ui-icon-suitcase {
+  .ui-icon-suitcase:before {
     background-position: -112px -96px; }
-  .ui-icon-comment {
+  .ui-icon-comment:before {
     background-position: -128px -96px; }
-  .ui-icon-person {
+  .ui-icon-person:before {
     background-position: -144px -96px; }
-  .ui-icon-print {
+  .ui-icon-print:before {
     background-position: -160px -96px; }
-  .ui-icon-trash {
+  .ui-icon-trash:before {
     background-position: -176px -96px; }
-  .ui-icon-locked {
+  .ui-icon-locked:before {
     background-position: -192px -96px; }
-  .ui-icon-unlocked {
+  .ui-icon-unlocked:before {
     background-position: -208px -96px; }
-  .ui-icon-bookmark {
+  .ui-icon-bookmark:before {
     background-position: -224px -96px; }
-  .ui-icon-tag {
+  .ui-icon-tag:before {
     background-position: -240px -96px; }
-  .ui-icon-home {
+  .ui-icon-home:before {
     background-position: 0 -112px; }
-  .ui-icon-flag {
+  .ui-icon-flag:before {
     background-position: -16px -112px; }
-  .ui-icon-calendar {
+  .ui-icon-calendar:before {
     background-position: -32px -112px; }
-  .ui-icon-cart {
+  .ui-icon-cart:before {
     background-position: -48px -112px; }
-  .ui-icon-pencil {
+  .ui-icon-pencil:before {
     background-position: -64px -112px; }
-  .ui-icon-clock {
+  .ui-icon-clock:before {
     background-position: -80px -112px; }
-  .ui-icon-disk {
+  .ui-icon-disk:before {
     background-position: -96px -112px; }
-  .ui-icon-calculator {
+  .ui-icon-calculator:before {
     background-position: -112px -112px; }
-  .ui-icon-zoomin {
+  .ui-icon-zoomin:before {
     background-position: -128px -112px; }
-  .ui-icon-zoomout {
+  .ui-icon-zoomout:before {
     background-position: -144px -112px; }
-  .ui-icon-search {
+  .ui-icon-search:before {
     background-position: -160px -112px; }
-  .ui-icon-wrench {
+  .ui-icon-wrench:before {
     background-position: -176px -112px; }
-  .ui-icon-gear {
+  .ui-icon-gear:before {
     background-position: -192px -112px; }
-  .ui-icon-heart {
+  .ui-icon-heart:before {
     background-position: -208px -112px; }
-  .ui-icon-star {
+  .ui-icon-star:before {
     background-position: -224px -112px; }
-  .ui-icon-link {
+  .ui-icon-link:before {
     background-position: -240px -112px; }
-  .ui-icon-cancel {
+  .ui-icon-cancel:before {
     background-position: 0 -128px; }
-  .ui-icon-plus {
+  .ui-icon-plus:before {
     background-position: -16px -128px; }
-  .ui-icon-plusthick {
+  .ui-icon-plusthick:before {
     background-position: -32px -128px; }
-  .ui-icon-minus {
+  .ui-icon-minus:before {
     background-position: -48px -128px; }
-  .ui-icon-minusthick {
+  .ui-icon-minusthick:before {
     background-position: -64px -128px; }
-  .ui-icon-close {
+  .ui-icon-close:before {
     background-position: -80px -128px; }
-  .ui-icon-closethick {
+  .ui-icon-closethick:before {
     background-position: -96px -128px; }
-  .ui-icon-key {
+  .ui-icon-key:before {
     background-position: -112px -128px; }
-  .ui-icon-lightbulb {
+  .ui-icon-lightbulb:before {
     background-position: -128px -128px; }
-  .ui-icon-scissors {
+  .ui-icon-scissors:before {
     background-position: -144px -128px; }
-  .ui-icon-clipboard {
+  .ui-icon-clipboard:before {
     background-position: -160px -128px; }
-  .ui-icon-copy {
+  .ui-icon-copy:before {
     background-position: -176px -128px; }
-  .ui-icon-contact {
+  .ui-icon-contact:before {
     background-position: -192px -128px; }
-  .ui-icon-image {
+  .ui-icon-image:before {
     background-position: -208px -128px; }
-  .ui-icon-video {
+  .ui-icon-video:before {
     background-position: -224px -128px; }
-  .ui-icon-script {
+  .ui-icon-script:before {
     background-position: -240px -128px; }
-  .ui-icon-alert {
+  .ui-icon-alert:before {
     background-position: 0 -144px; }
-  .ui-icon-info {
+  .ui-icon-info:before {
     background-position: -16px -144px; }
-  .ui-icon-notice {
+  .ui-icon-notice:before {
     background-position: -32px -144px; }
-  .ui-icon-help {
+  .ui-icon-help:before {
     background-position: -48px -144px; }
-  .ui-icon-check {
+  .ui-icon-check:before {
     background-position: -64px -144px; }
-  .ui-icon-bullet {
+  .ui-icon-bullet:before {
     background-position: -80px -144px; }
-  .ui-icon-radio-on {
+  .ui-icon-radio-on:before {
     background-position: -96px -144px; }
-  .ui-icon-radio-off {
+  .ui-icon-radio-off:before {
     background-position: -112px -144px; }
-  .ui-icon-pin-w {
+  .ui-icon-pin-w:before {
     background-position: -128px -144px; }
-  .ui-icon-pin-s {
+  .ui-icon-pin-s:before {
     background-position: -144px -144px; }
-  .ui-icon-play {
+  .ui-icon-play:before {
     background-position: 0 -160px; }
-  .ui-icon-pause {
+  .ui-icon-pause:before {
     background-position: -16px -160px; }
-  .ui-icon-seek-next {
+  .ui-icon-seek-next:before {
     background-position: -32px -160px; }
-  .ui-icon-seek-prev {
+  .ui-icon-seek-prev:before {
     background-position: -48px -160px; }
-  .ui-icon-seek-end {
+  .ui-icon-seek-end:before {
     background-position: -64px -160px; }
-  .ui-icon-seek-start {
+  .ui-icon-seek-start:before {
     background-position: -80px -160px; }
-  .ui-icon-seek-first {
+  .ui-icon-seek-first:before {
     background-position: -80px -160px; }
-  .ui-icon-stop {
+  .ui-icon-stop:before {
     background-position: -96px -160px; }
-  .ui-icon-eject {
+  .ui-icon-eject:before {
     background-position: -112px -160px; }
-  .ui-icon-volume-off {
+  .ui-icon-volume-off:before {
     background-position: -128px -160px; }
-  .ui-icon-volume-on {
+  .ui-icon-volume-on:before {
     background-position: -144px -160px; }
-  .ui-icon-power {
+  .ui-icon-power:before {
     background-position: 0 -176px; }
-  .ui-icon-signal-diag {
+  .ui-icon-signal-diag:before {
     background-position: -16px -176px; }
-  .ui-icon-signal {
+  .ui-icon-signal:before {
     background-position: -32px -176px; }
-  .ui-icon-battery-0 {
+  .ui-icon-battery-0:before {
     background-position: -48px -176px; }
-  .ui-icon-battery-1 {
+  .ui-icon-battery-1:before {
     background-position: -64px -176px; }
-  .ui-icon-battery-2 {
+  .ui-icon-battery-2:before {
     background-position: -80px -176px; }
-  .ui-icon-battery-3 {
+  .ui-icon-battery-3:before {
     background-position: -96px -176px; }
-  .ui-icon-circle-plus {
+  .ui-icon-circle-plus:before {
     background-position: 0 -192px; }
-  .ui-icon-circle-minus {
+  .ui-icon-circle-minus:before {
     background-position: -16px -192px; }
-  .ui-icon-circle-close {
+  .ui-icon-circle-close:before {
     background-position: -32px -192px; }
-  .ui-icon-circle-triangle-e {
+  .ui-icon-circle-triangle-e:before {
     background-position: -48px -192px; }
-  .ui-icon-circle-triangle-s {
+  .ui-icon-circle-triangle-s:before {
     background-position: -64px -192px; }
-  .ui-icon-circle-triangle-w {
+  .ui-icon-circle-triangle-w:before {
     background-position: -80px -192px; }
-  .ui-icon-circle-triangle-n {
+  .ui-icon-circle-triangle-n:before {
     background-position: -96px -192px; }
-  .ui-icon-circle-arrow-e {
+  .ui-icon-circle-arrow-e:before {
     background-position: -112px -192px; }
-  .ui-icon-circle-arrow-s {
+  .ui-icon-circle-arrow-s:before {
     background-position: -128px -192px; }
-  .ui-icon-circle-arrow-w {
+  .ui-icon-circle-arrow-w:before {
     background-position: -144px -192px; }
-  .ui-icon-circle-arrow-n {
+  .ui-icon-circle-arrow-n:before {
     background-position: -160px -192px; }
-  .ui-icon-circle-zoomin {
+  .ui-icon-circle-zoomin:before {
     background-position: -176px -192px; }
-  .ui-icon-circle-zoomout {
+  .ui-icon-circle-zoomout:before {
     background-position: -192px -192px; }
-  .ui-icon-circle-check {
+  .ui-icon-circle-check:before {
     background-position: -208px -192px; }
-  .ui-icon-circlesmall-plus {
+  .ui-icon-circlesmall-plus:before {
     background-position: 0 -208px; }
-  .ui-icon-circlesmall-minus {
+  .ui-icon-circlesmall-minus:before {
     background-position: -16px -208px; }
-  .ui-icon-circlesmall-close {
+  .ui-icon-circlesmall-close:before {
     background-position: -32px -208px; }
-  .ui-icon-squaresmall-plus {
+  .ui-icon-squaresmall-plus:before {
     background-position: -48px -208px; }
-  .ui-icon-squaresmall-minus {
+  .ui-icon-squaresmall-minus:before {
     background-position: -64px -208px; }
-  .ui-icon-squaresmall-close {
+  .ui-icon-squaresmall-close:before {
     background-position: -80px -208px; }
-  .ui-icon-grip-dotted-vertical {
+  .ui-icon-grip-dotted-vertical:before {
     background-position: 0 -224px; }
-  .ui-icon-grip-dotted-horizontal {
+  .ui-icon-grip-dotted-horizontal:before {
     background-position: -16px -224px; }
-  .ui-icon-grip-solid-vertical {
+  .ui-icon-grip-solid-vertical:before {
     background-position: -32px -224px; }
-  .ui-icon-grip-solid-horizontal {
+  .ui-icon-grip-solid-horizontal:before {
     background-position: -48px -224px; }
-  .ui-icon-gripsmall-diagonal-se {
+  .ui-icon-gripsmall-diagonal-se:before {
     background-position: -64px -224px; }
-  .ui-icon-grip-diagonal-se {
+  .ui-icon-grip-diagonal-se:before {
     background-position: -80px -224px; }
 
 .ui-corner-all {
@@ -664,26 +674,20 @@
 
 .ui-datepicker {
   width: 17em;
-  padding: .2em .2em 0;
+  padding: 0.4em;
   display: none; }
   .ui-datepicker-header {
     position: relative;
-    padding: .2em 0; }
+    padding: 0.4em; }
   .ui-datepicker-prev, .ui-datepicker-next {
     position: absolute;
-    top: 2px;
-    width: 1.8em;
-    height: 1.8em; }
-    .ui-datepicker-prev-hover, .ui-datepicker-next-hover {
-      top: 1px; }
+    top: 0.4em;
+    width: 1.6em;
+    height: 1.6em; }
   .ui-datepicker-prev {
-    left: 2px; }
-    .ui-datepicker-prev-hover {
-      left: 1px; }
+    left: 0.4em; }
   .ui-datepicker-next {
-    right: 2px; }
-    .ui-datepicker-next-hover {
-      right: 1px; }
+    right: 0.4em; }
   .ui-datepicker-prev span,
   .ui-datepicker-next span {
     display: block;
@@ -693,8 +697,7 @@
     top: 50%;
     margin-top: -8px; }
   .ui-datepicker-title {
-    margin: 0 2.3em;
-    line-height: 1.8em;
+    line-height: 1.6em;
     text-align: center; }
     .ui-datepicker-title select {
       font-size: 1em;
@@ -704,21 +707,21 @@
     width: 45%; }
   .ui-datepicker table {
     width: 100%;
-    font-size: .9em;
-    border-collapse: collapse;
-    margin: 0 0 .4em; }
+    font-size: 0.9em;
+    border-collapse: collapse; }
   .ui-datepicker th {
-    padding: .7em .3em;
+    padding: 0.7em 0.3em;
     text-align: center;
     font-weight: bold;
     border: 0; }
   .ui-datepicker td {
     border: 0;
+    width: 14.28571%;
     padding: 1px; }
     .ui-datepicker td span,
     .ui-datepicker td a {
       display: block;
-      padding: .2em;
+      padding: 0.4em 0.2em;
       text-align: center;
       text-decoration: none; }
   .ui-datepicker-buttonpane {
