@@ -3,28 +3,13 @@
     display: block;
     cursor: pointer;
     position: relative;
-    margin: 2px 0 0 0;
-    padding: .5em .5em .5em .7em;
-    font-size: 100%;
-
-    &-icon {
-      position: absolute;
-      left: .5em;
-      top: 50%;
-      margin-top: -8px;
-    }
-  }
-
-  &-icons {
-    padding-left: 2.2em;
-
-    & & {
-      padding-left: 2.2em;
-    }
+    margin: $ui-accordion-header-margin;
+    padding: $ui-accordion-header-padding;
+    font-size: $ui-accordion-font-size;
   }
 
   &-content {
-    padding: 1em 2.2em;
+    padding: $ui-accordion-content-padding;
     border-top: 0;
     overflow: auto;
   }

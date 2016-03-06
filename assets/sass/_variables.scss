@@ -4,6 +4,8 @@ $ui-border-radius: 3px !default;
 $ui-border-width:  1px !default;
 $ui-font-family:   Arial, Helvetica, sans-serif !default;
 $ui-font-size:     1em !default;
+$ui-padding-v:     0.4em !default;
+$ui-padding-h:     1em !default;
 
 // 2. Colors
 //---------------------------------------------------------
@@ -81,6 +83,19 @@ $ui-corner-border-radius: $ui-border-radius !default;
 
 // 8. Accordion
 //---------------------------------------------------------
+$ui-accordion-header-margin:   2px 0 0 0 !default;
+$ui-accordion-header-padding:  $ui-padding-v $ui-padding-h !default;
+$ui-accordion-font-size:       $ui-font-size !default;
+
+$ui-accordion-content-padding: 1em 2.2em !default;
+
+// 9. Button
+//---------------------------------------------------------
+$ui-button-padding: $ui-padding-v $ui-padding-h !default;
+
+// 10. Datepicker
+//---------------------------------------------------------
+
 
 
 

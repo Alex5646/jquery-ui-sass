@@ -82,7 +82,7 @@ gulp.task('css', function() {
 
 // Слежение
 gulp.task('watch', function() {
-    gulp.watch('./src/sass/**/*.{sass,scss}', ['css']);
+    gulp.watch('./assets/sass/**/*.{sass,scss}', ['css']);
 });
 
 // Стандартный таск

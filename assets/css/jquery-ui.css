@@ -227,8 +227,10 @@
   font-weight: normal; }
 
 .ui-icon {
+  display: inline-block;
   width: 16px;
-  height: 16px; }
+  height: 16px;
+  background: url(../img/ui-icons.png); }
   .ui-icon-blank {
     background-position: 16px 16px; }
   .ui-icon-caret-1-n {
@@ -616,18 +618,8 @@
   cursor: pointer;
   position: relative;
   margin: 2px 0 0 0;
-  padding: .5em .5em .5em .7em;
-  font-size: 100%; }
-  .ui-accordion-header-icon {
-    position: absolute;
-    left: .5em;
-    top: 50%;
-    margin-top: -8px; }
-
-.ui-accordion-icons {
-  padding-left: 2.2em; }
-  .ui-accordion-icons .ui-accordion-icons {
-    padding-left: 2.2em; }
+  padding: 0.4em 1em;
+  font-size: 1em; }
 
 .ui-accordion-content {
   padding: 1em 2.2em;
@@ -643,9 +635,8 @@
 .ui-button {
   display: inline-block;
   position: relative;
-  padding: 0;
+  padding: 0.4em 1em;
   line-height: normal;
-  margin-right: .1em;
   cursor: pointer;
   vertical-align: middle;
   text-align: center;
@@ -664,6 +655,20 @@ button.ui-button-icon-only {
 
 button.ui-button-icons-only {
   width: 3.7em; }
+
+.ui-buttonset:before, .ui-buttonset:after {
+  content: '';
+  display: table;
+  border-collapse: collapse; }
+
+.ui-buttonset:after {
+  clear: both; }
+
+.ui-buttonset .ui-button {
+  float: left;
+  margin-right: -1px; }
+  .ui-buttonset .ui-button.ui-state-active, .ui-buttonset .ui-button.ui-state-focus, .ui-buttonset .ui-button.ui-state-hover {
+    z-index: 100; }
 
 .ui-datepicker {
   width: 17em;
