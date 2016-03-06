@@ -168,10 +168,19 @@ $ui-slider-vertical-height:   200px !default;
 
 // 16. Spinner
 // ---------------------------------------------------------
-$ui-spinner-input-padding-v: $ui-padding-v !default;
-$ui-spinner-input-padding-h: $ui-padding-h !default;
+$ui-spinner-input-padding-v:  $ui-padding-v !default;
+$ui-spinner-input-padding-h:  $ui-padding-h !default;
 
-$ui-spinner-button-width: 1em !default;
+$ui-spinner-button-width:     1em !default;
 $ui-spinner-button-font-size: 0.5em !default;
+
+// 17. Tabs
+// ---------------------------------------------------------
+$ui-tabs-padding:       $ui-padding-v !default;
+
+$ui-tabs-nav-padding:   $ui-tabs-padding $ui-tabs-padding 0 !default;
+$ui-tabs-nav-offset:    $ui-tabs-padding !default;
+$ui-tabs-panel-padding: 0.5em 1em !default;
+
 
 
