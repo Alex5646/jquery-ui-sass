@@ -33,7 +33,7 @@ $ui-padding-h:                  12px !default; // h - horizontal
 $ui-transition-duration:        0.3s !default;
 $ui-transition-timing-function: linear !default;
 $ui-transition:                 $ui-transition-duration $ui-transition-timing-function !default;
-
+$ui-front-shadow:               0 6px 12px rgba(black, 0.175) !default;
 
 // 2. Colors
 // ---------------------------------------------------------
@@ -48,7 +48,7 @@ $ui-text-color:   $ui-gray-darker !default;
 // 3. Options
 // ---------------------------------------------------------
 $enable-rounded:     true !default;
-$enable-shadows:     true !default;
+$enable-shadows:     false !default;
 $enable-transitions: false !default;
 
 // 4. Widgets
@@ -71,7 +71,7 @@ $ui-widget-header-font-weight:   600 !default;
 $ui-widget-overlay-background:   $ui-gray !default;
 $ui-widget-overlay-opacity:      0.3 !default;
 
-$ui-widget-shadow:               0 0 5px $ui-gray-dark !default;
+$ui-widget-shadow:               0 5px 15px rgba(black, 0.5) !default;
 
 // 5. States
 // ---------------------------------------------------------
@@ -120,17 +120,18 @@ $ui-corner-border-radius: $ui-border-radius !default;
 
 // 8. Accordion
 // ---------------------------------------------------------
-$ui-accordion-header-margin:     2px 0 0 0 !default;
-$ui-accordion-header-padding:    $ui-padding-v $ui-padding-h !default;
-$ui-accordion-font-size:         $ui-font-size !default;
-$ui-accordion-line-height:       $ui-line-height !default;
-$ui-accordion-font-weight:       $ui-font-weight !default;
+$ui-accordion-header-margin:      2px 0 0 0 !default;
+$ui-accordion-header-padding:     $ui-padding-v $ui-padding-h !default;
 $ui-accordion-header-transition:
   background $ui-transition,
   color $ui-transition,
   border-color $ui-transition !default;
 
-$ui-accordion-content-padding:   15px !default;
+$ui-accordion-font-size:          $ui-font-size !default;
+$ui-accordion-line-height:        $ui-line-height !default;
+$ui-accordion-font-weight:        $ui-font-weight !default;
+
+$ui-accordion-content-padding:    15px !default;
 
 // 9. Button
 // ---------------------------------------------------------
@@ -148,6 +149,7 @@ $ui-button-transition:
 // ---------------------------------------------------------
 $ui-datepicker-width:                       300px !default;
 $ui-datepicker-padding:                     $ui-padding-v !default;
+$ui-datepicker-box-shadow:                  $ui-front-shadow !default;
 
 $ui-datepicker-header-padding-v:            $ui-padding-v !default;
 $ui-datepicker-header-padding-h:            $ui-padding-v !default;
@@ -179,6 +181,7 @@ $ui-datepicker-buttonpane-padding:          $ui-datepicker-padding 0 0 !default;
 // 11. Dialog
 // ---------------------------------------------------------
 $ui-dialog-padding:                 $ui-padding-v !default;
+$ui-dialog-box-shadow:              $ui-widget-shadow !default;
 
 $ui-dialog-titlebar-padding-v:      $ui-padding-v !default;
 $ui-dialog-titlebar-padding-h:      $ui-padding-h !default;

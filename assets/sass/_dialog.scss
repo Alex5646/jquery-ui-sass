@@ -5,6 +5,7 @@
   padding: $ui-dialog-padding;
   outline: 0;
   z-index: $ui-zindex-dialog;
+  @include box-shadow($ui-dialog-box-shadow);
 
   &-titlebar {
     padding: $ui-dialog-titlebar-padding-v $ui-dialog-titlebar-padding-h;

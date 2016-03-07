@@ -51,3 +51,7 @@
     @include box-shadow($ui-widget-shadow);
   }
 }
+
+.ui-front {
+  @include box-shadow($ui-front-shadow);
+}

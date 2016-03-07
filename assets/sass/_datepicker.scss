@@ -4,6 +4,10 @@
   display: none;
   z-index: $ui-zindex-datepicker;
 
+  &:not(.ui-datepicker-inline) {
+    @include box-shadow($ui-datepicker-box-shadow);
+  }
+
   &-header {
     position: relative;
     padding: $ui-datepicker-header-padding-v $ui-datepicker-header-padding-h;
@@ -127,6 +131,22 @@
       width: $ui-dialog-group-table-width;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @if $enable-rounded {
+      .ui-datepicker-header {
+        border-radius: 0;
+      }
+
+      &:first-child .ui-datepicker-header {
+        border-top-left-radius: $ui-datepicker-header-border-radius;
+        border-bottom-left-radius: $ui-datepicker-header-border-radius;
+      }
+
+      &:nth-last-child(3) .ui-datepicker-header {
+        border-top-right-radius: $ui-datepicker-header-border-radius;
+        border-bottom-right-radius: $ui-datepicker-header-border-radius;
+      }
     }
   }
 
