@@ -2,10 +2,16 @@
   width: $ui-datepicker-width;
   padding: $ui-datepicker-padding;
   display: none;
+  z-index: $ui-zindex-datepicker;
 
   &-header {
     position: relative;
     padding: $ui-datepicker-header-padding-v $ui-datepicker-header-padding-h;
+    margin: $ui-datepicker-header-margin;
+    border-color: $ui-datepicker-header-border-color;
+    border-width: $ui-datepicker-header-border-width;
+    border-radius: $ui-datepicker-header-border-radius;
+    background: $ui-datepicker-header-background;
   }
 
   &-prev,
@@ -45,10 +51,14 @@
     }
   }
 
-  select.ui-datepicker-month,
-  select.ui-datepicker-year {
-    width: calc(50% - #{($ui-datepicker-header-padding-h * 2) + $ui-datepicker-header-nav-size});
+  &-month,
+  &-year {
+    width: calc(50% - #{($ui-datepicker-header-padding-h * 2) + $ui-datepicker-header-nav-size + $ui-datepicker-select-offset});
     font-weight: normal;
+  }
+
+  &-month + &-year {
+    margin-left: $ui-datepicker-select-offset;
   }
 
   table {

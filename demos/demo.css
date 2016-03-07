@@ -1,0 +1,68 @@
+body {
+    font: 100% "Trebuchet MS", sans-serif;
+    margin: 50px }
+
+.demoHeaders {
+    margin-top: 20px }
+
+#icons {
+    margin: 0;
+    padding: 0 }
+    #icons li {
+        margin: 2px;
+        position: relative;
+        padding: 4px 0;
+        cursor: pointer;
+        float: left;
+        list-style: none }
+    #icons span.ui-icon {
+        float: left;
+        margin: 0 4px }
+
+.fakewindowcontain {
+    position: relative;
+    width: 96%;
+    height: 200px;
+    padding: 1% 2%;
+    overflow: hidden }
+    .fakewindowcontain .ui-widget-overlay {
+        position: absolute }
+    .fakewindowcontain .ui-widget-shadow {
+        width: 302px;
+        height: 152px;
+        position: absolute;
+        left: 50px;
+        top: 30px }
+    .fakewindowcontain .ui-widget {
+        position: absolute;
+        width: 280px;
+        height: 130px;
+        left: 50px;
+        top: 30px;
+        padding: 10px }
+        .fakewindowcontain .ui-widget .ui-dialog-content {
+            background: none;
+            border: 0 }
+
+#menu,
+select {
+    width: 200px }
+
+.offset {
+    margin-top: 20px }
+
+.state-demo {
+    margin-top: 20px;
+    padding: 0 0.7em }
+
+.table-demo {
+    margin-top: 20px }
+    .table-demo > tbody > tr > td {
+        vertical-align: top }
+        .table-demo > tbody > tr > td:first-child {
+            padding-right: 20px }
+        .table-demo > tbody > tr > td:not(:first-child, :last-child) {
+            padding-right: 20px;
+            padding-left: 20px }
+        .table-demo > tbody > tr > td:last-child {
+            padding-left: 20px }

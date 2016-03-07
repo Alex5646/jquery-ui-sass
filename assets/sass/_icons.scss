@@ -5,6 +5,7 @@
   
   &:before {
     font-size: inherit;
+    color: inherit;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -181,10 +182,4 @@
   &-squaresmall-plus:before { background-position: -48px -208px; }
   &-squaresmall-minus:before { background-position: -64px -208px; }
   &-squaresmall-close:before { background-position: -80px -208px; }
-  &-grip-dotted-vertical:before { background-position: 0 -224px; }
-  &-grip-dotted-horizontal:before { background-position: -16px -224px; }
-  &-grip-solid-vertical:before { background-position: -32px -224px; }
-  &-grip-solid-horizontal:before { background-position: -48px -224px; }
-  &-gripsmall-diagonal-se:before { background-position: -64px -224px; }
-  &-grip-diagonal-se:before { background-position: -80px -224px; }
 }

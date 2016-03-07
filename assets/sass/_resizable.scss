@@ -77,3 +77,38 @@
     top: -5px;
   }
 }
+
+.ui-icon {
+  &-grip-dotted-vertical:before {
+    background-position: 0 -224px;
+  }
+  &-grip-dotted-horizontal:before {
+    background-position: -16px -224px;
+  }
+  &-grip-solid-vertical:before {
+    background-position: -32px -224px;
+  }
+  &-grip-solid-horizontal:before {
+    background-position: -48px -224px;
+  }
+
+  &-gripsmall-diagonal-se:before {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: inherit;
+    border-right-color: inherit;
+    margin: 4px;
+  }
+
+  &-grip-diagonal-se:before {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: inherit;
+    border-right-color: inherit;
+    margin: 2px;
+  }
+}

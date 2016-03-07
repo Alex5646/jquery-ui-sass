@@ -4,6 +4,7 @@
   left: 0;
   padding: $ui-dialog-padding;
   outline: 0;
+  z-index: $ui-zindex-dialog;
 
   &-titlebar {
     padding: $ui-dialog-titlebar-padding-v $ui-dialog-titlebar-padding-h;
@@ -12,10 +13,9 @@
     &-close {
       position: absolute;
       right: $ui-dialog-titlebar-padding-v;
-      top: 50%;
+      top: calc(50% - #{$ui-dialog-titlebar-close-size / 2 + $ui-border-width});
       width: $ui-dialog-titlebar-close-size;
       height: $ui-dialog-titlebar-close-size;
-      margin-top: -($ui-dialog-titlebar-close-size / 2);
       padding: $ui-dialog-titlebar-close-padding;
     }
   }

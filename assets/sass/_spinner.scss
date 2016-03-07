@@ -4,16 +4,20 @@
   overflow: hidden;
   padding: 0;
   vertical-align: middle;
+  border: none;
 
   &-input {
-    border: none;
-    background: none;
+    position: relative;
+    background: $ui-spinner-input-background;
+    height: $ui-spinner-input-height;
     color: $ui-spinner-input-color;
     margin: 0;
     padding: $ui-spinner-input-padding-v $ui-spinner-input-padding-h;
     vertical-align: middle;
     box-sizing: border-box;
     width: calc(100% - #{$ui-spinner-button-width});
+    z-index: 20;
+    border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
     @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);
   }
 
@@ -29,13 +33,10 @@
     display: block;
     overflow: hidden;
     right: 0;
-  }
 
-  // more specificity required here to override default borders
-  a.ui-spinner-button {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
+    .ui-icon {
+      margin: auto;
+    }
   }
 
   // vertically center icon
@@ -43,7 +44,7 @@
     position: absolute;
     margin-top: -8px;
     top: 50%;
-    left: 0;
+    left: ($ui-spinner-button-width - $ui-spinner-button-font-size) / 2;
   }
 
   &-up {

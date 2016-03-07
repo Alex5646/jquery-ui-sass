@@ -25,7 +25,7 @@
 
     .ui-slider-handle {
       // Автоматическое позиционирование
-      top: ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - $ui-border-width;
+      top: ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - ($ui-border-width * 2);
       margin-left: $ui-slider-handle-size / -2;
     }
 

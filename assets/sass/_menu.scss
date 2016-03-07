@@ -8,6 +8,7 @@
 
   & & {
     position: absolute;
+    z-index: $ui-zindex-menu;
   }
 
   &-item {

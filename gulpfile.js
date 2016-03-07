@@ -61,7 +61,7 @@ gulp.task('js', function() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(concat('jquery-ui.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./assets/js'));
 });
@@ -75,7 +75,7 @@ gulp.task('css', function() {
         .pipe(postcss([
             autoprefixer({browsers: ['last 2 versions', '> 1%']})
         ]))
-        //.pipe(cssmin())
+        .pipe(cssmin())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./assets/css'));
 });

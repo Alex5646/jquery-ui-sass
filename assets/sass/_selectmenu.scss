@@ -1,7 +1,9 @@
 .ui-selectmenu {
+
   &-menu {
     display: none;
     position: absolute;
+    z-index: $ui-zindex-selectmenu;
 
     .ui-menu {
       overflow: auto;

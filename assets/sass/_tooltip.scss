@@ -1,6 +1,6 @@
 .ui-tooltip {
   padding: $ui-tooltip-padding;
   position: absolute;
-  z-index: $ui-tooltip-zindex;
+  z-index: $ui-zindex-tooltip;
   max-width: $ui-tooltip-max-width;
 }
