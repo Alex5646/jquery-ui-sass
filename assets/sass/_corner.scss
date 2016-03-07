@@ -1,5 +1,5 @@
 // Corner radius
-@if $enable-rounded {
+@if $ui-enable-rounded {
   .ui-corner {
     &-all {
       border-radius: $ui-corner-border-radius;

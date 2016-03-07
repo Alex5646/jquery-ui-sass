@@ -8,7 +8,7 @@
 
   & & {
     position: absolute;
-    z-index: $ui-zindex-menu;
+    z-index: $ui-zindex-menu !important;
   }
 
   &-item {
@@ -20,7 +20,7 @@
     position: relative;
     padding: $ui-menu-item-wrapper-padding-v $ui-menu-item-wrapper-padding-h;
     border: $ui-border-width solid transparent;
-    @include transition($ui-menu-item-wrapper-transition);
+    @include ui-transition($ui-menu-item-wrapper-transition);
   }
 
   &-divider {

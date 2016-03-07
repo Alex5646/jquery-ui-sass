@@ -8,7 +8,7 @@
     padding: $ui-tabs-nav-padding;
     border-color: $ui-tabs-nav-border-color;
     border-width: $ui-tabs-nav-border-width;
-    @include border-radius($ui-tabs-nav-border-radius);
+    @include ui-border-radius($ui-tabs-nav-border-radius);
     background: $ui-tabs-nav-background;
 
     .ui-tabs-anchor {
@@ -26,7 +26,7 @@
     top: 0;
     margin: $ui-tabs-tab-margin;
     padding: 0;
-    @include transition($ui-tabs-tab-transition);
+    @include ui-transition($ui-tabs-tab-transition);
 
     &.ui-tabs-active,
     &.ui-state-disabled,

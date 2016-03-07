@@ -9,8 +9,9 @@
 @mixin ui-state-link($color, $text-decoration: none) {
   a {
     &,
-    &:link,
-    &:visited {
+    &:active,
+    &:hover,
+    &:focus {
       color: $color;
 
       @if $text-decoration {

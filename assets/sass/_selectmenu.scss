@@ -3,7 +3,7 @@
   &-menu {
     display: none;
     position: absolute;
-    z-index: $ui-zindex-selectmenu;
+    z-index: $ui-zindex-selectmenu !important;
 
     .ui-menu {
       overflow: auto;
@@ -32,7 +32,7 @@
     cursor: pointer;
     padding: $ui-selectmenu-button-padding-v $ui-selectmenu-button-padding-h;
     line-height: $ui-selectmenu-button-line-height;
-    @include transition($ui-selectmenu-button-transition);
+    @include ui-transition($ui-selectmenu-button-transition);
 
     span {
       &.ui-icon {

@@ -9,7 +9,7 @@
     height: $ui-slider-handle-size;
     cursor: pointer;
     touch-action: none;
-    @include transition($ui-slider-handle-transition);
+    @include ui-transition($ui-slider-handle-transition);
   }
 
   &-range {

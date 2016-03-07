@@ -27,9 +27,9 @@
 
   &-header {
     border: $ui-widget-border-width solid $ui-widget-header-border-color;
-    background: $ui-widget-header-background;
     color: $ui-widget-header-color;
     font-weight: $ui-widget-header-font-weight;
+    background: $ui-widget-header-background;
 
     a {
       color: $ui-widget-header-color;
@@ -48,10 +48,10 @@
   }
 
   &-shadow {
-    @include box-shadow($ui-widget-shadow);
+    @include ui-box-shadow($ui-widget-shadow);
   }
 }
 
 .ui-front {
-  @include box-shadow($ui-front-shadow);
+  @include ui-box-shadow($ui-front-shadow);
 }

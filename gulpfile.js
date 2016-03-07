@@ -6,9 +6,16 @@ var gulp         = require('gulp'),
     cssmin       = require('gulp-cssmin'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
-    plumber      = require('gulp-plumber');
+    plumber      = require('gulp-plumber'),
+    jade         = require('gulp-jade');
 
-// Обьединение js и сжатие
+gulp.task('jade', function () {
+    gulp.src('./assets/jade/**/*[^_].jade')
+        .pipe(plumber())
+        .pipe(jade())
+        .pipe(gulp.dest('./'));
+});
+
 gulp.task('js', function() {
     gulp
         .src([
@@ -66,7 +73,6 @@ gulp.task('js', function() {
         .pipe(gulp.dest('./assets/js'));
 });
 
-// Компиляция sass, обьединение css, сжатие
 gulp.task('css', function() {
     gulp.src('./assets/sass/**/*.{sass,scss}')
         .pipe(plumber())
@@ -80,10 +86,9 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./assets/css'));
 });
 
-// Слежение
 gulp.task('watch', function() {
     gulp.watch('./assets/sass/**/*.{sass,scss}', ['css']);
+    gulp.watch('./assets/jade/**/*.jade', ['jade'])
 });
 
-// Стандартный таск
-gulp.task('default', ['watch', 'js', 'css']);
+gulp.task('default', ['watch', 'js', 'css', 'jade']);

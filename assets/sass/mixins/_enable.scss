@@ -1,0 +1,18 @@
+@mixin ui-border-radius($radius: $ui-border-radius) {
+  @if $ui-enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+@mixin ui-box-shadow($shadow...) {
+  @if $ui-enable-shadows {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin ui-transition($transition...) {
+  @if $ui-enable-transitions {
+    transition: $transition;
+  }
+}
+

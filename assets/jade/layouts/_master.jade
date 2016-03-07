@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(content="IE=edge", http-equiv="X-UA-Compatible")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="shortcut icon", href="/assets/img/favicon.png")
+
+        block title
+
+        block css
+            link(href="/assets/css/bootstrap.min.css", rel="stylesheet")
+            link(href="/assets/css/demo.css", rel="stylesheet")
+
+        block ui-css
+            link(href="/assets/css/jquery-ui.css", rel="stylesheet")
+    body
+        include ../partials/_header
+
+        .container
+            block container
+
+        include ../partials/_footer
+
+        block js
+            script(src="/assets/js/jquery.js")
+            script(src="/assets/js/jquery-ui.js")
+            script(src="/assets/js/util.js")
+            script(src="/assets/js/dropdown.js")
+            script(src="/assets/js/demo.js")

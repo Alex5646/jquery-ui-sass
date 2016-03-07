@@ -47,31 +47,32 @@ $ui-text-color:   $ui-gray-darker !default;
 
 // 3. Options
 // ---------------------------------------------------------
-$enable-rounded:     true !default;
-$enable-shadows:     false !default;
-$enable-transitions: false !default;
+$ui-enable-rounded:     true !default;
+$ui-enable-shadows:     false !default;
+$ui-enable-transitions: false !default;
+$ui-enable-gradients:   false !default;
 
 // 4. Widgets
 // ---------------------------------------------------------
-$ui-widget-border-width:         $ui-border-width !default;
-$ui-widget-font-family:          $ui-font-family !default;
-$ui-widget-font-size:            $ui-font-size !default;
-$ui-widget-line-height:          $ui-line-height !default;
-$ui-widget-font-weight:          $ui-font-weight !default;
+$ui-widget-border-width:            $ui-border-width !default;
+$ui-widget-font-family:             $ui-font-family !default;
+$ui-widget-font-size:               $ui-font-size !default;
+$ui-widget-line-height:             $ui-line-height !default;
+$ui-widget-font-weight:             $ui-font-weight !default;
 
-$ui-widget-content-border-color: $ui-gray-light !default;
-$ui-widget-content-background:   #ffffff !default;
-$ui-widget-content-color:        $ui-text-color !default;
+$ui-widget-content-border-color:    $ui-gray-light !default;
+$ui-widget-content-background:      #ffffff !default;
+$ui-widget-content-color:           $ui-text-color !default;
 
-$ui-widget-header-border-color:  $ui-gray-light !default;
-$ui-widget-header-background:    $ui-gray-lighter !default;
-$ui-widget-header-color:         $ui-text-color !default;
-$ui-widget-header-font-weight:   600 !default;
+$ui-widget-header-border-color:     $ui-gray-light !default;
+$ui-widget-header-background:       $ui-gray-lighter !default;
+$ui-widget-header-color:            $ui-text-color !default;
+$ui-widget-header-font-weight:      600 !default;
 
-$ui-widget-overlay-background:   $ui-gray !default;
-$ui-widget-overlay-opacity:      0.3 !default;
+$ui-widget-overlay-background:      $ui-gray !default;
+$ui-widget-overlay-opacity:         0.3 !default;
 
-$ui-widget-shadow:               0 5px 15px rgba(black, 0.5) !default;
+$ui-widget-shadow:                  0 5px 15px rgba(black, 0.5) !default;
 
 // 5. States
 // ---------------------------------------------------------
