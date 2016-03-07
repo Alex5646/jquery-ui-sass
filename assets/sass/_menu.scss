@@ -20,6 +20,7 @@
     position: relative;
     padding: $ui-menu-item-wrapper-padding-v $ui-menu-item-wrapper-padding-h;
     border: $ui-border-width solid transparent;
+    @include transition($ui-menu-item-wrapper-transition);
   }
 
   &-divider {

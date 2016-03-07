@@ -26,11 +26,11 @@
   }
 
   &-disabled {
-    cursor: default !important;
+    cursor: $ui-state-disabled-cursor !important;
     pointer-events: none;
 
     @include ui-state-container {
-      opacity: 0.35;
+      opacity: $ui-state-disabled-opacity;
       background-image: none;
     }
   }
@@ -39,14 +39,14 @@
 .ui-priority {
   &-primary {
     @include ui-state-container {
-      font-weight: bold;
+      font-weight: $ui-priority-primary-font-weight;
     }
   }
 
   &-secondary {
     @include ui-state-container {
-      opacity: 0.5;
-      font-weight: normal;
+      opacity: $ui-priority-secondary-opacity;
+      font-weight: $ui-priority-secondary-font-weight;
     }
   }
 }

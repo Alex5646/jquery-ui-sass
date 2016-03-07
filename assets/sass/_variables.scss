@@ -1,38 +1,39 @@
-// -----------------------------
-// | #  | Line | Title         |
-// -----------------------------
-// | 1  |      | Base          |
-// | 2  |      | Colors        |
-// | 3  |      | Options       |
-// | 4  |      | Widgets       |
-// | 5  |      | States        |
-// | 6  |      | Icons         |
-// | 7  |      | Corner radius |
-// | 8  |      | Accordion     |
-// | 9  |      | Button        |
-// | 10 |      | Datepicker    |
-// | 11 |      | Dialog        |
-// | 12 |      | Menu          |
-// | 13 |      | Progressbar   |
-// | 14 |      | Selectable    |
-// | 15 |      | Selectmenu    |
-// | 16 |      | Slider        |
-// | 17 |      | Spinner       |
-// | 18 |      | Tabs          |
-// | 19 |      | Tooltip       |
-// | 20 |      | Z-Index       |
-// -----------------------------
+
+// 1  Base
+// 2  Colors
+// 3  Options
+// 4  Widgets
+// 5  States
+// 6  Icons
+// 7  Corner radius
+// 8  Accordion
+// 9  Button
+// 10 Datepicker
+// 11 Dialog
+// 12 Menu
+// 13 Progressbar
+// 14 Selectable
+// 15 Selectmenu
+// 16 Slider
+// 17 Spinner
+// 18 Tabs
+// 19 Tooltip
+// 20 Z-Index
 
 // 1. Base
 // ---------------------------------------------------------
-$ui-border-radius: 4px !default;
-$ui-border-width:  1px !default;
-$ui-font-family:   Arial, Helvetica, sans-serif !default;
-$ui-font-size:     16px !default;
-$ui-line-height:   1.5 !default;
-$ui-font-weight:   400 !default;
-$ui-padding-v:     6px !default; // v - vertical
-$ui-padding-h:     12px !default; // h - horizontal
+$ui-border-radius:              4px !default;
+$ui-border-width:               1px !default;
+$ui-font-family:                Arial, Helvetica, sans-serif !default;
+$ui-font-size:                  16px !default;
+$ui-line-height:                1.5 !default;
+$ui-font-weight:                400 !default;
+$ui-padding-v:                  6px !default; // v - vertical
+$ui-padding-h:                  12px !default; // h - horizontal
+$ui-transition-duration:        0.3s !default;
+$ui-transition-timing-function: linear !default;
+$ui-transition:                 $ui-transition-duration $ui-transition-timing-function !default;
+
 
 // 2. Colors
 // ---------------------------------------------------------
@@ -74,31 +75,39 @@ $ui-widget-shadow:               0 0 5px $ui-gray-dark !default;
 
 // 5. States
 // ---------------------------------------------------------
-$ui-states-border-width: $ui-border-width !default;
+$ui-states-border-width:            $ui-border-width !default;
 
-$ui-state-default-border-color:   #c5c5c5 !default;
-$ui-state-default-background:     #f6f6f6 !default;
-$ui-state-default-color:          #454545 !default;
+$ui-state-default-border-color:     #c5c5c5 !default;
+$ui-state-default-background:       #f6f6f6 !default;
+$ui-state-default-color:            #454545 !default;
 
-$ui-state-hover-border-color:     #cccccc !default;
-$ui-state-hover-background:       #ededed !default;
-$ui-state-hover-color:            #2b2b2b !default;
+$ui-state-hover-border-color:       #cccccc !default;
+$ui-state-hover-background:         #ededed !default;
+$ui-state-hover-color:              #2b2b2b !default;
 
-$ui-state-focus-border-color:     $ui-state-hover-border-color !default;
-$ui-state-focus-background:       $ui-state-hover-background !default;
-$ui-state-focus-color:            $ui-state-hover-color !default;
+$ui-state-focus-border-color:       $ui-state-hover-border-color !default;
+$ui-state-focus-background:         $ui-state-hover-background !default;
+$ui-state-focus-color:              $ui-state-hover-color !default;
 
-$ui-state-active-border-color:    #003eff !default;
-$ui-state-active-background:      #007fff !default;
-$ui-state-active-color:           #ffffff !default;
+$ui-state-active-border-color:      #003eff !default;
+$ui-state-active-background:        #007fff !default;
+$ui-state-active-color:             #ffffff !default;
 
-$ui-state-highlight-border-color: #dad55e !default;
-$ui-state-highlight-background:   #fffa90 !default;
-$ui-state-highlight-color:        #777620 !default;
+$ui-state-highlight-border-color:   #dad55e !default;
+$ui-state-highlight-background:     #fffa90 !default;
+$ui-state-highlight-color:          #777620 !default;
 
-$ui-state-error-border-color:     #f1a899 !default;
-$ui-state-error-background:       #fddfdf !default;
-$ui-state-error-color:            #5f3f3f !default;
+$ui-state-error-border-color:       #f1a899 !default;
+$ui-state-error-background:         #fddfdf !default;
+$ui-state-error-color:              #5f3f3f !default;
+
+$ui-state-disabled-cursor:          default !default;
+$ui-state-disabled-opacity:         0.35 !default;
+
+$ui-priority-primary-font-weight:   bold !default;
+
+$ui-priority-secondary-opacity:     0.5 !default;
+$ui-priority-secondary-font-weight: normal !default;
 
 // 6. Icons
 // ---------------------------------------------------------
@@ -111,13 +120,17 @@ $ui-corner-border-radius: $ui-border-radius !default;
 
 // 8. Accordion
 // ---------------------------------------------------------
-$ui-accordion-header-margin:              2px 0 0 0 !default;
-$ui-accordion-header-padding:             $ui-padding-v $ui-padding-h !default;
-$ui-accordion-font-size:                  $ui-font-size !default;
-$ui-accordion-line-height:                $ui-line-height !default;
-$ui-accordion-font-weight:                $ui-font-weight !default;
+$ui-accordion-header-margin:     2px 0 0 0 !default;
+$ui-accordion-header-padding:    $ui-padding-v $ui-padding-h !default;
+$ui-accordion-font-size:         $ui-font-size !default;
+$ui-accordion-line-height:       $ui-line-height !default;
+$ui-accordion-font-weight:       $ui-font-weight !default;
+$ui-accordion-header-transition:
+  background $ui-transition,
+  color $ui-transition,
+  border-color $ui-transition !default;
 
-$ui-accordion-content-padding:            15px !default;
+$ui-accordion-content-padding:   15px !default;
 
 // 9. Button
 // ---------------------------------------------------------
@@ -126,36 +139,42 @@ $ui-button-padding-h:   $ui-padding-h !default;
 $ui-button-font-size:   $ui-font-size !default;
 $ui-button-line-height: $ui-line-height !default;
 $ui-button-font-weight: $ui-font-weight !default;
+$ui-button-transition:
+  background $ui-transition,
+  color $ui-transition,
+  border-color $ui-transition !default;
 
 // 10. Datepicker
 // ---------------------------------------------------------
-$ui-datepicker-width:                        300px !default;
-$ui-datepicker-padding:                      $ui-padding-v !default;
+$ui-datepicker-width:                       300px !default;
+$ui-datepicker-padding:                     $ui-padding-v !default;
 
-$ui-datepicker-header-padding-v:             $ui-padding-v !default;
-$ui-datepicker-header-padding-h:             $ui-padding-v !default;
-$ui-datepicker-header-margin:                0 !default;
-$ui-datepicker-header-border-color:          $ui-widget-header-border-color !default;
-$ui-datepicker-header-border-width:          $ui-border-width !default;
-$ui-datepicker-header-border-radius:         $ui-border-radius !default;
-$ui-datepicker-header-background:            $ui-widget-header-background !default;
+$ui-datepicker-header-padding-v:            $ui-padding-v !default;
+$ui-datepicker-header-padding-h:            $ui-padding-v !default;
+$ui-datepicker-header-margin:               0 !default;
+$ui-datepicker-header-border-color:         $ui-widget-header-border-color !default;
+$ui-datepicker-header-border-width:         $ui-border-width !default;
+$ui-datepicker-header-border-radius:        $ui-border-radius !default;
+$ui-datepicker-header-background:           $ui-widget-header-background !default;
 
-$ui-datepicker-title-font-size:              $ui-font-size !default;
-$ui-datepicker-title-line-height:            $ui-line-height !default;
-$ui-datepicker-title-font-weight:            $ui-font-weight !default;
+$ui-datepicker-title-font-size:             $ui-font-size !default;
+$ui-datepicker-title-line-height:           $ui-line-height !default;
+$ui-datepicker-title-font-weight:           $ui-font-weight !default;
 
-$ui-datepicker-header-nav-size:              24px !default;
+$ui-datepicker-header-nav-size:             24px !default;
+$ui-datepicker-header-nav-transition:       $ui-button-transition !default;
 
-$ui-datepicker-select-offset:                $ui-datepicker-padding !default;
+$ui-datepicker-select-offset:               $ui-datepicker-padding !default;
 
-$ui-datepicker-calendar-font-size:           14px !default;
-$ui-datepicker-calendar-margin-bottom:       0 0 $ui-datepicker-padding !default;
-$ui-datepicker-calendar-th-padding:          12px 5px !default;
-$ui-datepicker-calendar-td-padding:          1px !default;
-$ui-datepicker-calendar-element-padding:     6px 2px !default;
+$ui-datepicker-calendar-font-size:          14px !default;
+$ui-datepicker-calendar-margin-bottom:      0 0 $ui-datepicker-padding !default;
+$ui-datepicker-calendar-th-padding:         12px 5px !default;
+$ui-datepicker-calendar-td-padding:         1px !default;
+$ui-datepicker-calendar-element-padding:    6px 2px !default;
+$ui-datepicker-calendar-element-transition: $ui-button-transition !default;
 
-$ui-datepicker-buttonpane-border-width:      $ui-border-width 0 0 0 !default;
-$ui-datepicker-buttonpane-padding:           $ui-datepicker-padding 0 0 !default;
+$ui-datepicker-buttonpane-border-width:     $ui-border-width 0 0 0 !default;
+$ui-datepicker-buttonpane-padding:          $ui-datepicker-padding 0 0 !default;
 
 // 11. Dialog
 // ---------------------------------------------------------
@@ -163,8 +182,13 @@ $ui-dialog-padding:                 $ui-padding-v !default;
 
 $ui-dialog-titlebar-padding-v:      $ui-padding-v !default;
 $ui-dialog-titlebar-padding-h:      $ui-padding-h !default;
+
 $ui-dialog-titlebar-close-size:     20px !default;
 $ui-dialog-titlebar-close-padding:  1px !default;
+$ui-dialog-titlebar-close-top:      calc(50% - #{$ui-dialog-titlebar-close-size / 2 + $ui-border-width}) !default;
+$ui-dialog-titlebar-close-right:    $ui-dialog-titlebar-padding-v !default;
+
+$ui-dialog-title-width:             calc(100% - #{($ui-dialog-titlebar-padding-v * 2) + $ui-dialog-titlebar-close-size}) !default;
 
 $ui-dialog-content-padding:         15px !default;
 
@@ -176,12 +200,13 @@ $ui-dialog-group-table-width:       95% !default;
 
 // 12. Menu
 // ---------------------------------------------------------
-$ui-menu-min-width:            150px !default;
-$ui-menu-item-wrapper-padding-v: $ui-padding-v !default;
-$ui-menu-item-wrapper-padding-h: $ui-padding-h !default;
+$ui-menu-min-width:               150px !default;
+$ui-menu-item-wrapper-padding-v:  $ui-padding-v !default;
+$ui-menu-item-wrapper-padding-h:  $ui-padding-h !default;
+$ui-menu-item-wrapper-transition: $ui-button-transition !default;
 
-$ui-menu-divider-margin-v:     10px !default;
-$ui-menu-divider-border:       $ui-border-width solid $ui-widget-content-border-color !default;
+$ui-menu-divider-margin-v:        10px !default;
+$ui-menu-divider-border:          $ui-border-width solid $ui-widget-content-border-color !default;
 
 // 13. Progressbar
 // ---------------------------------------------------------
@@ -199,23 +224,35 @@ $ui-selectmenu-optgroup-font-weight: bold !default;
 $ui-selectmenu-optgroup-line-height: $ui-line-height !default;
 $ui-selectmenu-optgroup-padding-v:   $ui-menu-item-wrapper-padding-v !default;
 $ui-selectmenu-optgroup-padding-h:   $ui-menu-item-wrapper-padding-h !default;
+$ui-selectmenu-optgroup-margin:      ($ui-menu-divider-margin-v - ($ui-selectmenu-optgroup-padding-v * 2)) 0 $ui-menu-divider-margin-v !default;
 
 $ui-selectmenu-button-padding-v:     $ui-button-padding-v !default;
 $ui-selectmenu-button-padding-h:     $ui-button-padding-h !default;
 $ui-selectmenu-button-line-height:   $ui-line-height !default;
+$ui-selectmenu-button-transition:    $ui-button-transition !default;
 
 // 16. Slider
 // ---------------------------------------------------------
-$ui-slider-handle-size:       24px !default;
-$ui-slider-range-font-size:   14px !default;
+$ui-slider-handle-size:                   24px !default;
+$ui-slider-handle-transition:             $ui-button-transition !default;
+$ui-slider-range-font-size:               14px !default;
 
-$ui-slider-horizontal-height: 20px !default;
+$ui-slider-horizontal-height:             20px !default;
 
-$ui-slider-vertical-width:    $ui-slider-horizontal-height !default;
-$ui-slider-vertical-height:   200px !default;
+$ui-slider-horizontal-handle-top:         ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - $ui-border-width !default;
+$ui-slider-horizontal-handle-margin-left: $ui-slider-handle-size / -2 !default;
+
+$ui-slider-vertical-width:                $ui-slider-horizontal-height !default;
+$ui-slider-vertical-height:               200px !default;
+
+$ui-slider-vertical-handle-top:           ($ui-slider-vertical-width - $ui-slider-handle-size) / 2 - $ui-border-width !default;
+$ui-slider-vertical-handle-margin-bottom: $ui-slider-handle-size / -2 !default;
 
 // 17. Spinner
 // ---------------------------------------------------------
+$ui-spinner-button-width:       20px !default;
+$ui-spinner-button-font-size:   15px !default;
+
 $ui-spinner-input-padding-v:    $ui-padding-v !default;
 $ui-spinner-input-padding-h:    $ui-padding-h !default;
 $ui-spinner-input-color:        inherit !default;
@@ -224,27 +261,28 @@ $ui-spinner-input-line-height:  $ui-line-height !default;
 $ui-spinner-input-font-weight:  $ui-font-weight !default;
 $ui-spinner-input-background:   #fff !default;
 $ui-spinner-input-height:       auto !default;
+$ui-spinner-input-width:        calc(100% - #{$ui-spinner-button-width}) !default;
 $ui-spinner-input-border-width: $ui-border-width !default;
 $ui-spinner-input-border-color: $ui-widget-header-border-color !default;
 
-$ui-spinner-button-width:       20px !default;
-$ui-spinner-button-font-size:   15px !default;
-
 // 18. Tabs
 // ---------------------------------------------------------
-$ui-tabs-padding:                        $ui-padding-v !default;
-$ui-tabs-border:                         $ui-border-width solid $ui-widget-header-border-color !default;
+$ui-tabs-padding:           $ui-padding-v !default;
+$ui-tabs-border:            $ui-border-width solid $ui-widget-header-border-color !default;
 
-$ui-tabs-nav-padding:                    $ui-tabs-padding $ui-tabs-padding 0 !default;
-$ui-tabs-nav-offset:                     $ui-tabs-padding !default;
-$ui-tabs-nav-border-color:               $ui-widget-header-border-color !default;
-$ui-tabs-nav-border-width:               $ui-border-width !default;
-$ui-tabs-nav-background:                 $ui-widget-header-background !default;
-$ui-tabs-nav-border-radius:              $ui-border-radius !default;
+$ui-tabs-nav-padding:       $ui-tabs-padding $ui-tabs-padding 0 !default;
+$ui-tabs-nav-offset:        $ui-tabs-padding !default;
+$ui-tabs-nav-border-color:  $ui-widget-header-border-color !default;
+$ui-tabs-nav-border-width:  $ui-border-width !default;
+$ui-tabs-nav-background:    $ui-widget-header-background !default;
+$ui-tabs-nav-border-radius: $ui-border-radius !default;
 
-$ui-tabs-anchor-padding:                 $ui-padding-v $ui-padding-h !default;
+$ui-tabs-tab-margin:        $ui-border-width $ui-tabs-nav-offset #{$ui-border-width / -1} 0  !default;
+$ui-tabs-tab-transition:    $ui-button-transition !default;
 
-$ui-tabs-panel-padding:                  $ui-padding-v $ui-padding-h !default;
+$ui-tabs-anchor-padding:    $ui-padding-v $ui-padding-h !default;
+
+$ui-tabs-panel-padding:     $ui-padding-v $ui-padding-h !default;
 
 // 19. Tooltip
 // ---------------------------------------------------------

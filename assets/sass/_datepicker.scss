@@ -10,7 +10,7 @@
     margin: $ui-datepicker-header-margin;
     border-color: $ui-datepicker-header-border-color;
     border-width: $ui-datepicker-header-border-width;
-    border-radius: $ui-datepicker-header-border-radius;
+    @include border-radius($ui-datepicker-header-border-radius);
     background: $ui-datepicker-header-background;
   }
 
@@ -21,6 +21,7 @@
     top: $ui-datepicker-header-padding-h;
     width: $ui-datepicker-header-nav-size;
     height: $ui-datepicker-header-nav-size;
+    @include transition($ui-datepicker-header-nav-transition);
   }
 
   &-prev {
@@ -79,13 +80,14 @@
   td {
     border: 0;
     padding: $ui-datepicker-calendar-td-padding;
+    text-align: center;
 
     span,
     a {
       display: block;
       padding: $ui-datepicker-calendar-element-padding;
-      text-align: center;
       text-decoration: none;
+      @include transition($ui-datepicker-calendar-element-transition);
     }
   }
 

@@ -12,8 +12,8 @@
 
     &-close {
       position: absolute;
-      right: $ui-dialog-titlebar-padding-v;
-      top: calc(50% - #{$ui-dialog-titlebar-close-size / 2 + $ui-border-width});
+      right: $ui-dialog-titlebar-close-right;
+      top: $ui-dialog-titlebar-close-top;
       width: $ui-dialog-titlebar-close-size;
       height: $ui-dialog-titlebar-close-size;
       padding: $ui-dialog-titlebar-close-padding;
@@ -22,11 +22,7 @@
 
   &-title {
     float: left;
-
-    // 100% - (Отцтуп справа * 2) + Размер иконки
-    width: calc(100% - #{($ui-dialog-titlebar-padding-v * 2) + $ui-dialog-titlebar-close-size});
-
-    // Обрезаю всё что не помещается в выше указанный размер
+    width: $ui-dialog-title-width;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

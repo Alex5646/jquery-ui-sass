@@ -9,6 +9,7 @@
     height: $ui-slider-handle-size;
     cursor: pointer;
     touch-action: none;
+    @include transition($ui-slider-handle-transition);
   }
 
   &-range {
@@ -24,9 +25,8 @@
     height: $ui-slider-horizontal-height;
 
     .ui-slider-handle {
-      // Автоматическое позиционирование
-      top: ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - ($ui-border-width * 2);
-      margin-left: $ui-slider-handle-size / -2;
+      top: $ui-slider-horizontal-handle-top;
+      margin-left: $ui-slider-horizontal-handle-margin-left;
     }
 
     .ui-slider-range {
@@ -48,10 +48,9 @@
     height: $ui-slider-vertical-height;
 
     .ui-slider-handle {
-      // Автоматическое позиционирование
-      left: ($ui-slider-vertical-width - $ui-slider-handle-size) / 2 - $ui-border-width;
+      left: $ui-slider-vertical-handle-top;
       margin-left: 0;
-      margin-bottom: $ui-slider-handle-size / -2;
+      margin-bottom: $ui-slider-vertical-handle-margin-bottom;
     }
 
     .ui-slider-range {

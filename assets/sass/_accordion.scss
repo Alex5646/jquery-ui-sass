@@ -6,6 +6,7 @@
     margin: $ui-accordion-header-margin;
     padding: $ui-accordion-header-padding;
     @include ui-font($ui-accordion-font-size, $ui-accordion-line-height, $ui-accordion-font-weight);
+    @include transition($ui-accordion-header-transition);
   }
 
   &-content {

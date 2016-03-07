@@ -15,12 +15,7 @@
         line-height: $ui-selectmenu-optgroup-line-height;
         padding: $ui-selectmenu-optgroup-padding-v $ui-selectmenu-optgroup-padding-h;
         height: auto;
-
-        // При отсуцтвии текста отступ сверху будет не
-        // правильным, из-за внутреннего отцтупа по вертикали.
-        //
-        // Ниже решение этой проблемы.
-        margin: ($ui-menu-divider-margin-v - ($ui-selectmenu-optgroup-padding-v * 2)) 0 $ui-menu-divider-margin-v;
+        margin: $ui-selectmenu-optgroup-margin;
       }
     }
   }
@@ -37,6 +32,7 @@
     cursor: pointer;
     padding: $ui-selectmenu-button-padding-v $ui-selectmenu-button-padding-h;
     line-height: $ui-selectmenu-button-line-height;
+    @include transition($ui-selectmenu-button-transition);
 
     span {
       &.ui-icon {

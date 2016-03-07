@@ -15,18 +15,6 @@
   font-family: $ui-widget-font-family;
   @include ui-font($ui-widget-font-size, $ui-widget-line-height, $ui-widget-font-weight);
 
-  & & {
-    font-size: $ui-widget-font-size;
-  }
-
-  input,
-  select,
-  textarea,
-  button {
-    font-family: $ui-widget-font-family;
-    font-size: $ui-widget-font-size;
-  }
-
   &-content {
     border: $ui-widget-border-width solid $ui-widget-content-border-color;
     background: $ui-widget-content-background;
@@ -59,9 +47,7 @@
     height: 100%;
   }
 
-  @if $enable-shadows {
-    &-shadow {
-      box-shadow: $ui-widget-shadow;
-    }
+  &-shadow {
+    @include box-shadow($ui-widget-shadow);
   }
 }

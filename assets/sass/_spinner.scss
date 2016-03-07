@@ -1,7 +1,6 @@
 .ui-spinner {
   position: relative;
   display: inline-block;
-  overflow: hidden;
   padding: 0;
   vertical-align: middle;
   border: none;
@@ -15,7 +14,7 @@
     padding: $ui-spinner-input-padding-v $ui-spinner-input-padding-h;
     vertical-align: middle;
     box-sizing: border-box;
-    width: calc(100% - #{$ui-spinner-button-width});
+    width: $ui-spinner-input-width;
     z-index: 20;
     border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
     @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);

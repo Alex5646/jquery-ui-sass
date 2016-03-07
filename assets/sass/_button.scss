@@ -8,6 +8,7 @@
   overflow: visible;
   touch-action: manipulation;
   @include ui-font($ui-button-font-size, $ui-button-line-height, $ui-button-font-weight);
+  @include transition($ui-button-transition);
 
   &,
   &:link,
