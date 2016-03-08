@@ -10,7 +10,7 @@ var gulp         = require('gulp'),
     jade         = require('gulp-jade');
 
 gulp.task('jade', function () {
-    gulp.src('./assets/jade/**/*[^_].jade')
+    gulp.src('./assets/jade/**/[^_]*.jade')
         .pipe(plumber())
         .pipe(jade())
         .pipe(gulp.dest('./'));

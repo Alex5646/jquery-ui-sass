@@ -18,6 +18,11 @@
     z-index: 20;
     border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
     @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);
+
+    @if $ui-enable-rounded {
+      border-top-left-radius: $ui-border-radius;
+      border-bottom-left-radius: $ui-border-radius;
+    }
   }
 
   &-button {

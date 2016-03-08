@@ -2,6 +2,7 @@
   height: $ui-progressbar-height;
   text-align: left;
   overflow: hidden;
+  margin-bottom: $ui-progressbar-spacing;
 
   &-value {
     margin: -$ui-widget-border-width;

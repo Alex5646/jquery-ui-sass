@@ -1,4 +1,6 @@
 .ui-accordion {
+  margin-bottom: $ui-accordion-spacing;
+
   &-header {
     display: block;
     cursor: pointer;

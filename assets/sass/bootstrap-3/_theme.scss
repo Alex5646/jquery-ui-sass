@@ -1,0 +1,148 @@
+.ui-state-active {
+  @include ui-box-shadow(inset 0 3px 5px rgba(black, 0.125));
+}
+
+// Accordion
+.ui-accordion-header,
+.ui-accordion-content {
+  @include ui-box-shadow(0 1px 1px rgba(black, 0.05));
+}
+
+.ui-accordion-header {
+  &.ui-state-default,
+  &.ui-state-hover,
+  &.ui-state-focus,
+  &.ui-state-active {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+  }
+}
+
+// Datepicker
+.ui-datepicker-buttonpane {
+  margin: 0 #{$ui-datepicker-padding / -1} #{$ui-datepicker-padding / -1};
+}
+
+.ui-datepicker-calendar {
+  .ui-state-default {
+    border-color: transparent;
+    background: transparent;
+    @include ui-border-radius($ui-border-radius);
+  }
+
+  .ui-state-hover {
+    background: $ui-gray-lighter;
+  }
+
+  .ui-state-highlight {
+    color: #428bca;
+  }
+
+  .ui-state-active {
+    @include ui-box-shadow(none);
+    background: #428bca;
+    color: #fff;
+  }
+}
+
+// Dialog
+.ui-dialog-titlebar {
+  @include ui-border-radius(0);
+  border-width: 0 0 $ui-border-width;
+  background: transparent;
+}
+
+.ui-dialog-titlebar-close {
+  @include ui-transition(opacity $ui-transition);
+
+  &.ui-state-default {
+    background: transparent;
+    @include ui-box-shadow(none);
+    border-color: transparent;
+    opacity: 0.25;
+  }
+
+  &.ui-state-hover {
+    opacity: 1;
+  }
+}
+
+// Resizable
+.ui-resizable-handle {
+  @include ui-transition(opacity $ui-transition);
+  opacity: 0.25;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// Menu
+.ui-menu {
+  padding: 5px 0;
+  @include ui-border-radius($ui-border-radius);
+}
+
+.ui-menu-item-wrapper.ui-state-active {
+  border-color: transparent;
+  @include ui-box-shadow(none);
+  background: #f5f5f5;
+}
+
+// Progressbar & Slider
+.ui-slider,
+.ui-progressbar {
+  border: none;
+  background-color: #f5f5f5;
+  @include ui-border-radius($ui-border-radius);
+  @include ui-box-shadow(inset 0 1px 2px rgba(black, 0.1));
+}
+
+.ui-slider-range,
+.ui-progressbar-value {
+  background-color: #428bca;
+  @include ui-box-shadow(inset 0 -1px 0 rgba(black, 0.15));
+}
+
+// Selectmenu
+.ui-selectmenu-optgroup {
+  color: #999;
+}
+
+// Spinner
+.ui-spinner {
+  display: block;
+}
+
+.ui-spinner-input {
+  height: 34px;
+  @include ui-box-shadow(inset 0 1px 1px rgba(black, 0.075));
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  &:focus {
+    border-color: #66afe9;
+    outline: 0;
+    @include ui-box-shadow(inset 0 1px 1px rgba(black, 0.075), 0 0 8px rgba(#66afe9, 0.6));
+  }
+}
+
+// Tabs
+.ui-tabs-tab {
+  &.ui-state-default {
+    border-color: transparent transparent $ui-tabs-nav-border-color;
+    @include ui-state-link(#428bca);
+  }
+
+  &.ui-state-hover {
+    background: #eee;
+    @include ui-state-link(#2a6496);
+  }
+
+  &.ui-state-active {
+    background: #fff;
+    @include ui-state-link(#555);
+    @include ui-box-shadow(none);
+    border-color: $ui-tabs-nav-border-color $ui-tabs-nav-border-color #fff;
+  }
+}

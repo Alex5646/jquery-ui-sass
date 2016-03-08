@@ -1,7 +1,7 @@
 .ui-menu {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 $ui-menu-spacing;
   display: block;
   outline: none;
   min-width: $ui-menu-min-width;
