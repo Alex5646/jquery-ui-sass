@@ -19,11 +19,7 @@
     border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
     @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);
     @include ui-transition($ui-spinner-input-transition);
-
-    @if $ui-enable-rounded {
-      border-top-left-radius: $ui-border-radius;
-      border-bottom-left-radius: $ui-border-radius;
-    }
+    @include ui-border-left-radius($ui-border-radius);
 
     &:focus {
       outline: 0;

@@ -280,13 +280,13 @@ $ui-slider-handle-transition:             $ui-button-transition !default;
 
 $ui-slider-horizontal-height:             $ui-progressbar-height !default;
 
-$ui-slider-horizontal-handle-top:         ($ui-slider-horizontal-height - $ui-slider-handle-size) / 2 - $ui-border-width !default;
+$ui-slider-horizontal-handle-top:         calc(50% - #{$ui-slider-handle-size / 2}) !default;
 $ui-slider-horizontal-handle-margin-left: $ui-slider-handle-size / -2 !default;
 
 $ui-slider-vertical-width:                $ui-slider-horizontal-height !default;
 $ui-slider-vertical-height:               200px !default;
 
-$ui-slider-vertical-handle-top:           ($ui-slider-vertical-width - $ui-slider-handle-size) / 2 - $ui-border-width !default;
+$ui-slider-vertical-handle-top:           $ui-slider-horizontal-handle-top !default;
 $ui-slider-vertical-handle-margin-bottom: $ui-slider-handle-size / -2 !default;
 
 // 17. Spinner
