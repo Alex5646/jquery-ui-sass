@@ -113,3 +113,9 @@
     border-color: $ui-tabs-nav-border-color $ui-tabs-nav-border-color #fff;
   }
 }
+
+// Tooltip
+.ui-tooltip {
+  @include ui-box-shadow(none);
+}
+

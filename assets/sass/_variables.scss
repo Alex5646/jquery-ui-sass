@@ -333,14 +333,19 @@ $ui-tabs-panel-padding:     $ui-padding-v $ui-padding-h !default;
 
 // 19. Tooltip
 // ---------------------------------------------------------
-$ui-tooltip-padding:   10px !default;
-$ui-tooltip-max-width: 300px !default;
+$ui-tooltip-padding:       10px !default;
+$ui-tooltip-max-width:     300px !default;
+$ui-tooltip-background:    $ui-widget-content-background !default;
+$ui-tooltip-border:        $ui-border-width solid $ui-widget-content-border-color !default;
+$ui-tooltip-border-radius: $ui-border-radius !default;
+$ui-tooltip-color:         $ui-text-color !default;
 
 // 20. Z-Index
 // ---------------------------------------------------------
 $ui-zindex-datepicker:   500 !default;
-$ui-zindex-tooltip:      500 !default;
-$ui-zindex-menu:         500 !default;
-$ui-zindex-selectmenu:   500 !default;
-$ui-zindex-autocomplete: 600 !default;
-$ui-zindex-dialog:       700 !default;
+$ui-zindex-tooltip:      600 !default;
+$ui-zindex-menu:         700 !default;
+$ui-zindex-selectmenu:   700 !default;
+$ui-zindex-autocomplete: 700 !default;
+$ui-zindex-dialog:       800 !default;
+

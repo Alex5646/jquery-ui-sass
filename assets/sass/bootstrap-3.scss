@@ -334,8 +334,12 @@ $ui-tabs-panel-padding:                  15px 0 0 !default;
 
 // 19. Tooltip
 // ---------------------------------------------------------
-$ui-tooltip-padding:   10px !default;
-$ui-tooltip-max-width: 300px !default;
+$ui-tooltip-padding:       3px 8px !default;
+$ui-tooltip-max-width:     200px !default;
+$ui-tooltip-background:    rgba(black, 0.9) !default;
+$ui-tooltip-border:        none !default;
+$ui-tooltip-border-radius: $ui-border-radius !default;
+$ui-tooltip-color:         #fff !default;
 
 // 20. Z-Index
 // ---------------------------------------------------------
