@@ -13,6 +13,9 @@
     @include ui-border-radius($ui-dialog-titlebar-border-radius);
     border-width: $ui-dialog-titlebar-border-width;
     background: $ui-dialog-titlebar-background;
+    margin: $ui-dialog-titlebar-margin;
+    color: $ui-dialog-titlebar-color;
+    border-color: $ui-dialog-titlebar-border-color;
 
     &-close {
       position: absolute;

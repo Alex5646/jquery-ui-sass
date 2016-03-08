@@ -13,13 +13,12 @@
     @include ui-tab-focus;
   }
 
-  &-active {
-    @include ui-state($ui-state-active-border-color, $ui-state-active-background, $ui-state-active-color);
-  }
-
-  // Interaction Cues
   &-highlight {
     @include ui-state($ui-state-highlight-border-color, $ui-state-highlight-background, $ui-state-highlight-color);
+  }
+
+  &-active {
+    @include ui-state($ui-state-active-border-color, $ui-state-active-background, $ui-state-active-color);
   }
 
   &-error {

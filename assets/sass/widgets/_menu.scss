@@ -6,6 +6,8 @@
   min-width: $ui-menu-min-width;
   padding: $ui-menu-padding;
   @include ui-border-radius($ui-menu-border-radius);
+  border-color: $ui-menu-border-color;
+  border-width: $ui-menu-border-border-width;
 
   & & {
     position: absolute;
@@ -22,6 +24,12 @@
     padding: $ui-menu-item-wrapper-padding-v $ui-menu-item-wrapper-padding-h;
     border: $ui-border-width solid transparent;
     @include ui-transition($ui-menu-item-wrapper-transition);
+
+    &.ui-state-active {
+      border-color: transparent;
+      background: $ui-menu-item-wrapper-background;
+      color: $ui-menu-item-wrapper-color;
+    }
   }
 
   &-divider {

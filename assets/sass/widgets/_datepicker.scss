@@ -18,6 +18,7 @@
     border-width: $ui-datepicker-header-border-width;
     @include ui-border-radius($ui-datepicker-header-border-radius);
     background: $ui-datepicker-header-background;
+    color: $ui-datepicker-header-color;
   }
 
   &-prev,
@@ -56,6 +57,7 @@
     select {
       font-size: $ui-font-size;
       margin: 1px 0;
+      color: $ui-text-color;
     }
   }
 
@@ -72,7 +74,7 @@
   table {
     width: 100%;
     font-size: $ui-datepicker-calendar-font-size;
-    margin: $ui-datepicker-calendar-margin-bottom;
+    margin: $ui-datepicker-calendar-margin;
     border-collapse: collapse;
     table-layout: fixed;
   }
@@ -92,9 +94,9 @@
     span,
     a {
       display: block;
-      padding: $ui-datepicker-calendar-element-padding;
+      padding: $ui-datepicker-day-padding;
       text-decoration: none;
-      @include ui-transition($ui-datepicker-calendar-element-transition);
+      @include ui-transition($ui-datepicker-day-transition);
     }
   }
 

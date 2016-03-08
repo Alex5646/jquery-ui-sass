@@ -2,27 +2,28 @@
 
 @import "variables";
 @import "mixins";
-@import "helpers";
 
-@import "widgets";
-@import "states";
-@import "icons";
-@import "corner";
+@import "core/helpers";
+@import "core/widgets";
+@import "core/states";
+@import "core/icons";
+@import "core/corner";
 
-@import "accordion";
-@import "autocomplete";
-@import "button";
-@import "buttonset";
-@import "datepicker";
-@import "dialog";
-@import "draggable";
-@import "menu";
-@import "progressbar";
-@import "resizable";
-@import "selectable";
-@import "selectmenu";
-@import "sortable";
-@import "slider";
-@import "spinner";
-@import "tabs";
-@import "tooltip";
+@import "components/draggable";
+@import "components/resizable";
+@import "components/selectable";
+@import "components/sortable";
+
+@import "widgets/accordion";
+@import "widgets/autocomplete";
+@import "widgets/button";
+@import "widgets/buttonset";
+@import "widgets/datepicker";
+@import "widgets/dialog";
+@import "widgets/menu";
+@import "widgets/progressbar";
+@import "widgets/selectmenu";
+@import "widgets/slider";
+@import "widgets/spinner";
+@import "widgets/tabs";
+@import "widgets/tooltip";

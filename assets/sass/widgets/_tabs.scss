@@ -5,7 +5,7 @@
   margin-bottom: $ui-tabs-spacing;
 
   &-nav {
-    margin: 0;
+    margin: $ui-tabs-nav-margin;
     padding: $ui-tabs-nav-padding;
     border-color: $ui-tabs-nav-border-color;
     border-width: $ui-tabs-nav-border-width;

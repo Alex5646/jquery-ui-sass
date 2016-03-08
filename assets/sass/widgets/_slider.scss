@@ -1,6 +1,8 @@
 .ui-slider {
   position: relative;
   text-align: left;
+  background: $ui-slider-background;
+  border: $ui-slider-border;
 
   &-handle {
     position: absolute;
@@ -18,7 +20,8 @@
     font-size: $ui-slider-range-font-size;
     display: block;
     border: 0;
-    background-position: 0 0;
+    background: $ui-slider-range-background;
+    border: $ui-slider-range-border;
   }
 
   &-horizontal {
