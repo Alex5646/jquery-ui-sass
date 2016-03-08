@@ -8,6 +8,7 @@
     .ui-menu {
       overflow: auto;
       overflow-x: hidden;
+      margin: 0;
 
       .ui-selectmenu-optgroup {
         font-size: $ui-selectmenu-optgroup-font-size;
@@ -16,6 +17,7 @@
         padding: $ui-selectmenu-optgroup-padding-v $ui-selectmenu-optgroup-padding-h;
         height: auto;
         margin: $ui-selectmenu-optgroup-margin;
+        color: $ui-selectmenu-optgroup-color;
       }
     }
   }

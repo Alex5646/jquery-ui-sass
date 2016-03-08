@@ -10,6 +10,7 @@
 
   &-focus {
     @include ui-state($ui-state-focus-border-color, $ui-state-focus-background, $ui-state-focus-color);
+    @include ui-tab-focus;
   }
 
   &-active {

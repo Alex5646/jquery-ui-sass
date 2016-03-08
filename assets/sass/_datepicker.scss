@@ -105,6 +105,7 @@
     background-image: none;
     padding: $ui-datepicker-buttonpane-padding;
     @include ui-clearfix;
+    margin: $ui-datepicker-buttonpane-margin;
 
     button {
       float: right;

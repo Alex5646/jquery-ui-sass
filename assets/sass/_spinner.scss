@@ -1,6 +1,6 @@
 .ui-spinner {
   position: relative;
-  display: inline-block;
+  display: $ui-spinner-display;
   padding: 0;
   vertical-align: middle;
   border: none;
@@ -18,10 +18,16 @@
     z-index: 20;
     border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
     @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);
+    @include ui-transition($ui-spinner-input-transition);
 
     @if $ui-enable-rounded {
       border-top-left-radius: $ui-border-radius;
       border-bottom-left-radius: $ui-border-radius;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $ui-spinner-input-focus-border-color;
     }
   }
 

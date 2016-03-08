@@ -49,7 +49,7 @@ $ui-text-color:   $ui-gray-darker !default;
 // ---------------------------------------------------------
 $ui-enable-rounded:     true !default;
 $ui-enable-shadows:     true !default;
-$ui-enable-transitions: false !default;
+$ui-enable-transitions: true !default;
 $ui-enable-gradients:   false !default;
 
 // 4. Widgets
@@ -145,7 +145,8 @@ $ui-button-font-weight: $ui-font-weight !default;
 $ui-button-transition:
   background $ui-transition,
   color $ui-transition,
-  border-color $ui-transition !default;
+  border-color $ui-transition,
+  box-shadow $ui-transition !default;
 
 // 10. Datepicker
 // ---------------------------------------------------------
@@ -182,6 +183,7 @@ $ui-datepicker-calendar-element-transition: $ui-button-transition !default;
 
 $ui-datepicker-buttonpane-border-width:     $ui-border-width 0 0 0 !default;
 $ui-datepicker-buttonpane-padding:          10px 15px 4px !default;
+$ui-datepicker-buttonpane-margin:           0 #{$ui-datepicker-padding / -1} #{$ui-datepicker-padding / -1} !default;
 
 // 11. Dialog
 // ---------------------------------------------------------
@@ -190,6 +192,9 @@ $ui-dialog-box-shadow:              $ui-widget-shadow !default;
 
 $ui-dialog-titlebar-padding-v:      15px !default;
 $ui-dialog-titlebar-padding-h:      15px !default;
+$ui-dialog-titlebar-border-radius:  0 !default;
+$ui-dialog-titlebar-border-width:   0 0 $ui-border-width !default;
+$ui-dialog-titlebar-background:     transparent !default;
 
 $ui-dialog-titlebar-close-size:     20px !default;
 $ui-dialog-titlebar-close-padding:  1px !default;
@@ -209,6 +214,8 @@ $ui-dialog-group-table-width:       95% !default;
 // 12. Menu
 // ---------------------------------------------------------
 $ui-menu-min-width:               150px !default;
+$ui-menu-padding:                 5px 0 !default;
+$ui-menu-border-radius:           $ui-border-radius !default;
 $ui-menu-spacing:                 $ui-spacing !default;
 
 $ui-menu-item-wrapper-padding-v:  3px !default;
@@ -232,6 +239,7 @@ $ui-selectable-border: $ui-border-width dotted $ui-gray-darker !default;
 // ---------------------------------------------------------
 $ui-selectmenu-optgroup-font-size:   12px !default;
 $ui-selectmenu-optgroup-font-weight: $ui-font-weight !default;
+$ui-selectmenu-optgroup-color:       #999 !default;
 $ui-selectmenu-optgroup-line-height: $ui-line-height !default;
 $ui-selectmenu-optgroup-padding-v:   $ui-menu-item-wrapper-padding-v !default;
 $ui-selectmenu-optgroup-padding-h:   $ui-menu-item-wrapper-padding-h !default;
@@ -261,20 +269,25 @@ $ui-slider-vertical-handle-margin-bottom: $ui-slider-handle-size / -2 !default;
 
 // 17. Spinner
 // ---------------------------------------------------------
-$ui-spinner-button-width:       20px !default;
-$ui-spinner-button-font-size:   15px !default;
+$ui-spinner-display:                  block !default;
 
-$ui-spinner-input-padding-v:    $ui-padding-v !default;
-$ui-spinner-input-padding-h:    $ui-padding-h !default;
-$ui-spinner-input-color:        #555 !default;
-$ui-spinner-input-font-size:    $ui-font-size !default;
-$ui-spinner-input-line-height:  $ui-line-height !default;
-$ui-spinner-input-font-weight:  $ui-font-weight !default;
-$ui-spinner-input-background:   #fff !default;
-$ui-spinner-input-height:       auto !default;
-$ui-spinner-input-width:        calc(100% - #{$ui-spinner-button-width}) !default;
-$ui-spinner-input-border-width: $ui-border-width !default;
-$ui-spinner-input-border-color: #ccc !default;
+$ui-spinner-button-width:             20px !default;
+$ui-spinner-button-font-size:         15px !default;
+
+$ui-spinner-input-padding-v:          $ui-padding-v !default;
+$ui-spinner-input-padding-h:          $ui-padding-h !default;
+$ui-spinner-input-color:              #555 !default;
+$ui-spinner-input-font-size:          $ui-font-size !default;
+$ui-spinner-input-line-height:        $ui-line-height !default;
+$ui-spinner-input-font-weight:        $ui-font-weight !default;
+$ui-spinner-input-background:         #fff !default;
+$ui-spinner-input-height:             34px !default;
+$ui-spinner-input-width:              calc(100% - #{$ui-spinner-button-width}) !default;
+$ui-spinner-input-border-width:       $ui-border-width !default;
+$ui-spinner-input-border-color:       #ccc !default;
+$ui-spinner-input-transition:         border-color $ui-transition, box-shadow $ui-transition !default;
+
+$ui-spinner-input-focus-border-color: #66afe9 !default;
 
 // 18. Tabs
 // ---------------------------------------------------------

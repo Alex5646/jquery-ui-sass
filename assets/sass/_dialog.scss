@@ -10,6 +10,9 @@
   &-titlebar {
     padding: $ui-dialog-titlebar-padding-v $ui-dialog-titlebar-padding-h;
     position: relative;
+    @include ui-border-radius($ui-dialog-titlebar-border-radius);
+    border-width: $ui-dialog-titlebar-border-width;
+    background: $ui-dialog-titlebar-background;
 
     &-close {
       position: absolute;

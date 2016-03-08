@@ -1,14 +1,15 @@
 .ui-menu {
   list-style: none;
-  padding: 0;
   margin: 0 0 $ui-menu-spacing;
   display: block;
   outline: none;
   min-width: $ui-menu-min-width;
+  padding: $ui-menu-padding;
+  @include ui-border-radius($ui-menu-border-radius);
 
   & & {
     position: absolute;
-    z-index: $ui-zindex-menu !important;
+    z-index: $ui-zindex-menu;
   }
 
   &-item {
