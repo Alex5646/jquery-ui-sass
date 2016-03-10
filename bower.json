@@ -1,0 +1,22 @@
+{
+  "name": "jquery-ui-sass",
+  "version": "0.0.1",
+  "main": [
+    "assets/css/bootstrap-3.css",
+    "assets/css/jquery-ui.css",
+    "assets/css/metro.css"
+  ],
+  "ignore": [
+    ".*",
+    "*.html",
+    "assets/css/demo.css",
+    "assets/js/demo.js",
+    "assets/jade/",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "jquery-ui": "^1.11.4"
+  }
+}

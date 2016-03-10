@@ -1,0 +1,70 @@
+#icons {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none
+  }
+
+  .ui-icon {
+    float: left;
+    margin: 0 7px
+  }
+}
+
+.fakewindowcontain {
+  position: relative;
+  width: 96%;
+  height: 200px;
+  padding: 1% 2%;
+  overflow: hidden;
+
+  .ui-widget-overlay {
+    position: absolute;
+  }
+
+  .ui-widget-shadow {
+    width: 302px;
+    height: 152px;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+  }
+
+  .ui-widget {
+    position: absolute;
+    width: 280px;
+    height: 130px;
+    left: 50px;
+    top: 30px;
+    padding: 10px;
+  }
+
+  .ui-dialog-content {
+    background: none;
+    border: 0;
+  }
+}
+
+#menu,
+select {
+  width: 200px;
+}
+
+.offset {
+  margin-bottom: 20px;
+}
+
+.state-demo {
+  margin-bottom: 20px;
+  padding: 15px;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

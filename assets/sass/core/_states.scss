@@ -1,0 +1,52 @@
+// Interaction states
+.ui-state {
+  &-default {
+    @include ui-state($ui-state-default-border-color, $ui-state-default-background, $ui-state-default-color);
+  }
+
+  &-hover {
+    @include ui-state($ui-state-hover-border-color, $ui-state-hover-background, $ui-state-hover-color);
+  }
+
+  &-focus {
+    @include ui-state($ui-state-focus-border-color, $ui-state-focus-background, $ui-state-focus-color);
+    @include ui-tab-focus;
+  }
+
+  &-highlight {
+    @include ui-state($ui-state-highlight-border-color, $ui-state-highlight-background, $ui-state-highlight-color);
+  }
+
+  &-active {
+    @include ui-state($ui-state-active-border-color, $ui-state-active-background, $ui-state-active-color);
+  }
+
+  &-error {
+    @include ui-state($ui-state-error-border-color, $ui-state-error-background, $ui-state-error-color);
+  }
+
+  &-disabled {
+    cursor: $ui-state-disabled-cursor !important;
+    pointer-events: none;
+
+    @include ui-state-container {
+      opacity: $ui-state-disabled-opacity;
+      background-image: none;
+    }
+  }
+}
+
+.ui-priority {
+  &-primary {
+    @include ui-state-container {
+      font-weight: $ui-priority-primary-font-weight;
+    }
+  }
+
+  &-secondary {
+    @include ui-state-container {
+      opacity: $ui-priority-secondary-opacity;
+      font-weight: $ui-priority-secondary-font-weight;
+    }
+  }
+}

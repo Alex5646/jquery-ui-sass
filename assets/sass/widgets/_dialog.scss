@@ -1,0 +1,68 @@
+.ui-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: $ui-dialog-padding;
+  outline: 0;
+  z-index: $ui-zindex-dialog !important;
+  @include ui-box-shadow($ui-dialog-box-shadow);
+
+  &-titlebar {
+    padding: $ui-dialog-titlebar-padding-v $ui-dialog-titlebar-padding-h;
+    position: relative;
+    @include ui-border-radius($ui-dialog-titlebar-border-radius);
+    border-width: $ui-dialog-titlebar-border-width;
+    background: $ui-dialog-titlebar-background;
+    margin: $ui-dialog-titlebar-margin;
+    color: $ui-dialog-titlebar-color;
+    border-color: $ui-dialog-titlebar-border-color;
+
+    &-close {
+      position: absolute;
+      right: $ui-dialog-titlebar-close-right;
+      top: $ui-dialog-titlebar-close-top;
+      width: $ui-dialog-titlebar-close-size;
+      height: $ui-dialog-titlebar-close-size;
+      padding: $ui-dialog-titlebar-close-padding;
+    }
+  }
+
+  &-title {
+    float: left;
+    width: $ui-dialog-title-width;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &-content {
+    position: relative;
+    border: 0;
+    padding: $ui-dialog-content-padding;
+    background: none;
+    overflow: auto;
+  }
+
+  &-buttonpane {
+    text-align: left;
+    border-width: $ui-dialog-buttonpane-border-width;
+    background-image: none;
+    padding: $ui-dialog-buttonpane-padding;
+
+    .ui-dialog-buttonset {
+      float: right;
+    }
+
+    button {
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: $ui-dialog-buttonpane-offset;
+      }
+    }
+  }
+}
+
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}

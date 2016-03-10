@@ -1,0 +1,10 @@
+.ui-tooltip {
+  padding: $ui-tooltip-padding;
+  position: absolute;
+  z-index: $ui-zindex-tooltip !important;
+  max-width: $ui-tooltip-max-width;
+  background: $ui-tooltip-background;
+  border: $ui-tooltip-border;
+  @include ui-border-radius($ui-tooltip-border-radius);
+  color: $ui-tooltip-color;
+}

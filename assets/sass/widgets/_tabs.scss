@@ -1,0 +1,51 @@
+.ui-tabs {
+  position: relative;
+  padding: $ui-tabs-padding;
+  border: $ui-tabs-border;
+  margin-bottom: $ui-tabs-spacing;
+
+  &-nav {
+    margin: $ui-tabs-nav-margin;
+    padding: $ui-tabs-nav-padding;
+    border-color: $ui-tabs-nav-border-color;
+    border-width: $ui-tabs-nav-border-width;
+    @include ui-border-radius($ui-tabs-nav-border-radius);
+    background: $ui-tabs-nav-background;
+
+    .ui-tabs-anchor {
+      float: left;
+      padding: $ui-tabs-anchor-padding;
+      text-decoration: none;
+    }
+
+    > li {
+      list-style: none;
+      float: left;
+      display: block;
+      position: relative;
+      top: 0;
+      margin: $ui-tabs-tab-margin;
+      padding: 0;
+      @include ui-transition($ui-tabs-tab-transition);
+
+      &.ui-tabs-active,
+      &.ui-state-disabled,
+      &.ui-tabs-loading {
+        .ui-tabs-anchor {
+          cursor: text;
+        }
+      }
+    }
+  }
+
+  &-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    cursor: pointer;
+  }
+
+  &-panel {
+    display: block;
+    border-width: 0;
+    padding: $ui-tabs-panel-padding;
+    background: none;
+  }
+}

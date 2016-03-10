@@ -1,0 +1,19 @@
+.ui-accordion {
+  margin-bottom: $ui-accordion-spacing;
+
+  &-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: $ui-accordion-header-margin;
+    padding: $ui-accordion-header-padding;
+    @include ui-font($ui-accordion-font-size, $ui-accordion-line-height, $ui-accordion-font-weight);
+    @include ui-transition($ui-accordion-header-transition);
+  }
+
+  &-content {
+    padding: $ui-accordion-content-padding;
+    border-top: 0;
+    overflow: auto;
+  }
+}

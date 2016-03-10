@@ -1,0 +1,79 @@
+.ui-resizable {
+  position: relative;
+
+  &-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+    touch-action: none;
+  }
+
+  &-disabled &-handle,
+  &-autohide &-handle {
+    display: none;
+  }
+
+  &-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+  }
+
+  &-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+  }
+
+  &-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+  }
+
+  &-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+  }
+
+  &-se {
+    cursor: se-resize;
+    width: 15px + $ui-border-width;
+    height: 19px + $ui-border-width;
+    right: 1px;
+    bottom: 1px;
+  }
+
+  &-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+  }
+
+  &-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+  }
+
+  &-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+  }
+}

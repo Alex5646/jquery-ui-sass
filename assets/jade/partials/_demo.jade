@@ -1,0 +1,478 @@
+h2.header-demo Accordion
+#accordion
+    h3 First
+    div.
+        Lorem ipsum dolor sit amet. Lorem ipsum
+        dolor sit amet. Lorem ipsum dolor sit amet.
+
+    h3 Second
+    div Phasellus mattis tincidunt nibh.
+
+    h3 Third
+    div Nam dui erat, auctor a, dignissim quis.
+
+h2.header-demo Autocomplete
+input#autocomplete(title="type &quot;a&quot;")
+
+h2.header-demo Buttons
+button#button A button element
+br
+br
+form: #radioset
+    input#radio1(type="radio", name="radio")
+    label(for="radio1") Choice 1
+
+    input#radio2(type="radio", name="radio", checked)
+    label(for="radio2") Choice 2
+
+    input#radio3(type="radio", name="radio")
+    label(for="radio3") Choice 3
+
+h2.header-demo Tabs
+#tabs
+    ul
+        li: a(href="#tabs-1") First
+        li: a(href="#tabs-2") Second
+        li: a(href="#tabs-3") Third
+
+    #tabs-1.
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+
+    #tabs-2.
+        Phasellus mattis tincidunt nibh. Cras orci
+        urna, blandit id, pretium vel, aliquet ornare,
+        felis. Maecenas scelerisque sem non nisl.
+        Fusce sed lorem in enim dictum bibendum.
+
+    #tabs-3.
+        Nam dui erat, auctor a, dignissim quis,
+        sollicitudin eu, felis. Pellentesque nisi urna,
+        interdum eget, sagittis et, consequat vestibulum,
+        lacus. Mauris porttitor ullamcorper augue.
+
+h2.header-demo Dialog
+a#dialog-link(href="#") Open Dialog
+
+h2.header-demo Overlay and Shadow Classes <em>(not currently used in UI widgets)</em>
+.fakewindowcontain
+    p.
+        Lorem ipsum dolor sit amet, Nulla nec tortor. Donec
+        id elit quis purus consectetur consequat.
+
+    p.
+        Nam congue semper tellus. Sed erat dolor, dapibus
+        sit amet, venenatis ornare, ultrices ut, nisi. Aliquam
+        ante. Suspendisse scelerisque dui nec velit. Duis augue
+        augue, gravida euismod, vulputate ac, facilisis id, sem.
+        Morbi in orci.
+
+    p.
+        Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec,
+        quam. Nam molestie scelerisque quam. Nullam feugiat cursus
+        lacus.orem ipsum dolor sit amet, consectetur adipiscing elit.
+        Donec libero risus, commodo vitae, pharetra mollis, posuere eu,
+        pede. Nulla nec tortor. Donec id elit quis purus consectetur
+        consequat.
+
+    p.
+        Nam congue semper tellus. Sed erat dolor, dapibus sit amet,
+        venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse
+        scelerisque dui nec velit. Duis augue augue, gravida euismod,
+        vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus
+        lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie
+        scelerisque quam.
+
+    p.
+        Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur
+        adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis,
+        posuere eu, pede. Nulla nec tortor. Donec id elit quis purus
+        consectetur consequat. Nam congue semper tellus. Sed erat dolor,
+        dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante.
+
+    p.
+        Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod,
+        vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar
+        vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam.
+        Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur
+        adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere
+        eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat.
+        Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare,
+        ultrices ut, nisi.
+
+    .ui-overlay
+        .ui-widget-overlay
+        .ui-widget-shadow.ui-corner-all
+
+        .ui-widget.ui-widget-content.ui-corner-all: .ui-dialog-content.ui-widget-content
+            p.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+#dialog(title="Dialog Title"): p.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+h2.header-demo: a(href="https://www.npmjs.com/package/jquery-ui-iconfont") jquery-ui-iconfont
+p Icon License <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+
+h3.header-demo Busy Icons (Loaders/Spinners)
+p Icons from font - example:<br>&lt;span class="ui-icon ui-loading-icon ui-icon-<strong>name</strong>&gt;&lt;/span&gt;
+
+ul#icons.ui-widget.ui-helper-clearfix
+    li.ui-state-default.ui-corner-all(title=".ui-icon-balls"): span.ui-icon.ui-loading-icon.ui-icon-balls
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle"): span.ui-icon.ui-loading-icon.ui-icon-circle
+    li.ui-state-default.ui-corner-all(title=".ui-icon-comet"): span.ui-icon.ui-loading-icon.ui-icon-comet
+    li.ui-state-default.ui-corner-all(title=".ui-icon-lines"): span.ui-icon.ui-loading-icon.ui-icon-lines
+    li.ui-state-default.ui-corner-all(title=".ui-icon-planet"): span.ui-icon.ui-loading-icon.ui-icon-planet
+
+h3.header-demo Framework Icons (content color preview)
+
+ul#icons.ui-widget.ui-helper-clearfix
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-n"): span.ui-icon.ui-icon-arrow-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-ne"): span.ui-icon.ui-icon-arrow-1-ne
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-e"): span.ui-icon.ui-icon-arrow-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-se"): span.ui-icon.ui-icon-arrow-1-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-s"): span.ui-icon.ui-icon-arrow-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-sw"): span.ui-icon.ui-icon-arrow-1-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-w"): span.ui-icon.ui-icon-arrow-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-1-nw"): span.ui-icon.ui-icon-arrow-1-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowstop-1-n"): span.ui-icon.ui-icon-arrowstop-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowstop-1-e"): span.ui-icon.ui-icon-arrowstop-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowstop-1-s"): span.ui-icon.ui-icon-arrowstop-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowstop-1-w"): span.ui-icon.ui-icon-arrowstop-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturn-1-n"): span.ui-icon.ui-icon-arrowreturn-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturn-1-e"): span.ui-icon.ui-icon-arrowreturn-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturn-1-s"): span.ui-icon.ui-icon-arrowreturn-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturn-1-w"): span.ui-icon.ui-icon-arrowreturn-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowrefresh-1-n"): span.ui-icon.ui-icon-arrowrefresh-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowrefresh-1-e"): span.ui-icon.ui-icon-arrowrefresh-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowrefresh-1-s"): span.ui-icon.ui-icon-arrowrefresh-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowrefresh-1-w"): span.ui-icon.ui-icon-arrowrefresh-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-2-n-s"): span.ui-icon.ui-icon-arrow-2-n-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-2-ne-sw"): span.ui-icon.ui-icon-arrow-2-ne-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-2-e-w"): span.ui-icon.ui-icon-arrow-2-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-2-se-nw"): span.ui-icon.ui-icon-arrow-2-se-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-4"): span.ui-icon.ui-icon-arrow-4
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrow-4-diag"): span.ui-icon.ui-icon-arrow-4-diag
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-n"): span.ui-icon.ui-icon-arrowthick-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-ne"): span.ui-icon.ui-icon-arrowthick-1-ne
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-e"): span.ui-icon.ui-icon-arrowthick-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-se"): span.ui-icon.ui-icon-arrowthick-1-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-s"): span.ui-icon.ui-icon-arrowthick-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-sw"): span.ui-icon.ui-icon-arrowthick-1-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-w"): span.ui-icon.ui-icon-arrowthick-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-1-nw"): span.ui-icon.ui-icon-arrowthick-1-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthickstop-1-n"): span.ui-icon.ui-icon-arrowthickstop-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthickstop-1-e"): span.ui-icon.ui-icon-arrowthickstop-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthickstop-1-s"): span.ui-icon.ui-icon-arrowthickstop-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthickstop-1-w"): span.ui-icon.ui-icon-arrowthickstop-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturnthick-1-n"): span.ui-icon.ui-icon-arrowreturnthick-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturnthick-1-e"): span.ui-icon.ui-icon-arrowreturnthick-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturnthick-1-s"): span.ui-icon.ui-icon-arrowreturnthick-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowreturnthick-1-w"): span.ui-icon.ui-icon-arrowreturnthick-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-2-n-s"): span.ui-icon.ui-icon-arrowthick-2-n-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-2-ne-sw"): span.ui-icon.ui-icon-arrowthick-2-ne-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-2-e-w"): span.ui-icon.ui-icon-arrowthick-2-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-arrowthick-2-se-nw"): span.ui-icon.ui-icon-arrowthick-2-se-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-arrow-n"): span.ui-icon.ui-icon-circle-arrow-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-arrow-e"): span.ui-icon.ui-icon-circle-arrow-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-arrow-s"): span.ui-icon.ui-icon-circle-arrow-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-arrow-w"): span.ui-icon.ui-icon-circle-arrow-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-n"): span.ui-icon.ui-icon-carat-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-ne"): span.ui-icon.ui-icon-carat-1-ne
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-e"): span.ui-icon.ui-icon-carat-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-se"): span.ui-icon.ui-icon-carat-1-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-s"): span.ui-icon.ui-icon-carat-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-sw"): span.ui-icon.ui-icon-carat-1-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-w"): span.ui-icon.ui-icon-carat-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-1-nw"): span.ui-icon.ui-icon-carat-1-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-n-s"): span.ui-icon.ui-icon-carat-2-n-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-e-w"): span.ui-icon.ui-icon-carat-2-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-n"): span.ui-icon.ui-icon-triangle-1-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-ne"): span.ui-icon.ui-icon-triangle-1-ne
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-e"): span.ui-icon.ui-icon-triangle-1-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-se"): span.ui-icon.ui-icon-triangle-1-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-s"): span.ui-icon.ui-icon-triangle-1-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-sw"): span.ui-icon.ui-icon-triangle-1-sw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-w"): span.ui-icon.ui-icon-triangle-1-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-nw"): span.ui-icon.ui-icon-triangle-1-nw
+    li.ui-state-default.ui-corner-all(title=".ui-icon-seek-end"): span.ui-icon.ui-icon-seek-end
+    li.ui-state-default.ui-corner-all(title=".ui-icon-seek-first"): span.ui-icon.ui-icon-seek-first
+    li.ui-state-default.ui-corner-all(title=".ui-icon-seek-next"): span.ui-icon.ui-icon-seek-next
+    li.ui-state-default.ui-corner-all(title=".ui-icon-seek-prev"): span.ui-icon.ui-icon-seek-prev
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-2-n-s"): span.ui-icon.ui-icon-triangle-2-n-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-2-e-w"): span.ui-icon.ui-icon-triangle-2-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-triangle-n"): span.ui-icon.ui-icon-circle-triangle-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-triangle-e"): span.ui-icon.ui-icon-circle-triangle-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-triangle-s"): span.ui-icon.ui-icon-circle-triangle-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-triangle-w"): span.ui-icon.ui-icon-circle-triangle-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-bullet"): span.ui-icon.ui-icon-bullet
+    li.ui-state-default.ui-corner-all(title=".ui-icon-radio-off"): span.ui-icon.ui-icon-radio-off
+    li.ui-state-default.ui-corner-all(title=".ui-icon-alert"): span.ui-icon.ui-icon-alert
+    li.ui-state-default.ui-corner-all(title=".ui-icon-help"): span.ui-icon.ui-icon-help
+    li.ui-state-default.ui-corner-all(title=".ui-icon-info"): span.ui-icon.ui-icon-info
+    li.ui-state-default.ui-corner-all(title=".ui-icon-notice"): span.ui-icon.ui-icon-notice
+    li.ui-state-default.ui-corner-all(title=".ui-icon-grip-diagonal-se"): span.ui-icon.ui-icon-grip-diagonal-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-gripsmall-diagonal-se"): span.ui-icon.ui-icon-gripsmall-diagonal-se
+    li.ui-state-default.ui-corner-all(title=".ui-icon-grip-solid-horizontal"): span.ui-icon.ui-icon-grip-solid-horizontal
+    li.ui-state-default.ui-corner-all(title=".ui-icon-grip-dotted-horizontal"): span.ui-icon.ui-icon-grip-dotted-horizontal
+    li.ui-state-default.ui-corner-all(title=".ui-icon-grip-solid-vertical"): span.ui-icon.ui-icon-grip-solid-vertical
+    li.ui-state-default.ui-corner-all(title=".ui-icon-grip-dotted-vertical"): span.ui-icon.ui-icon-grip-dotted-vertical
+    li.ui-state-default.ui-corner-all(title=".ui-icon-check"): span.ui-icon.ui-icon-check
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-check"): span.ui-icon.ui-icon-circle-check
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cancel"): span.ui-icon.ui-icon-cancel
+    li.ui-state-default.ui-corner-all(title=".ui-icon-close"): span.ui-icon.ui-icon-close
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-close"): span.ui-icon.ui-icon-circle-close
+    li.ui-state-default.ui-corner-all(title=".ui-icon-closethick"): span.ui-icon.ui-icon-closethick
+    li.ui-state-default.ui-corner-all(title=".ui-icon-squaresmall-close"): span.ui-icon.ui-icon-squaresmall-close
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circlesmall-close"): span.ui-icon.ui-icon-circlesmall-close
+    li.ui-state-default.ui-corner-all(title=".ui-icon-minus"): span.ui-icon.ui-icon-minus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-minus"): span.ui-icon.ui-icon-circle-minus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-minusthick"): span.ui-icon.ui-icon-minusthick
+    li.ui-state-default.ui-corner-all(title=".ui-icon-squaresmall-minus"): span.ui-icon.ui-icon-squaresmall-minus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circlesmall-minus"): span.ui-icon.ui-icon-circlesmall-minus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-plus"): span.ui-icon.ui-icon-plus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-plus"): span.ui-icon.ui-icon-circle-plus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-plusthick"): span.ui-icon.ui-icon-plusthick
+    li.ui-state-default.ui-corner-all(title=".ui-icon-squaresmall-plus"): span.ui-icon.ui-icon-squaresmall-plus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circlesmall-plus"): span.ui-icon.ui-icon-circlesmall-plus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-pencil"): span.ui-icon.ui-icon-pencil
+    li.ui-state-default.ui-corner-all(title=".ui-icon-copy"): span.ui-icon.ui-icon-copy
+    li.ui-state-default.ui-corner-all(title=".ui-icon-scissors"): span.ui-icon.ui-icon-scissors
+    li.ui-state-default.ui-corner-all(title=".ui-icon-clipboard"): span.ui-icon.ui-icon-clipboard
+    li.ui-state-default.ui-corner-all(title=".ui-icon-disk"): span.ui-icon.ui-icon-disk
+    li.ui-state-default.ui-corner-all(title=".ui-icon-trash"): span.ui-icon.ui-icon-trash
+    li.ui-state-default.ui-corner-all(title=".ui-icon-print"): span.ui-icon.ui-icon-print
+    li.ui-state-default.ui-corner-all(title=".ui-icon-note"): span.ui-icon.ui-icon-note
+    li.ui-state-default.ui-corner-all(title=".ui-icon-tag"): span.ui-icon.ui-icon-tag
+    li.ui-state-default.ui-corner-all(title=".ui-icon-folder-collapsed"): span.ui-icon.ui-icon-folder-collapsed
+    li.ui-state-default.ui-corner-all(title=".ui-icon-folder-open"): span.ui-icon.ui-icon-folder-open
+    li.ui-state-default.ui-corner-all(title=".ui-icon-document"): span.ui-icon.ui-icon-document
+    li.ui-state-default.ui-corner-all(title=".ui-icon-document-b"): span.ui-icon.ui-icon-document-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-video"): span.ui-icon.ui-icon-video
+    li.ui-state-default.ui-corner-all(title=".ui-icon-image"): span.ui-icon.ui-icon-image
+    li.ui-state-default.ui-corner-all(title=".ui-icon-script"): span.ui-icon.ui-icon-script
+    li.ui-state-default.ui-corner-all(title=".ui-icon-play"): span.ui-icon.ui-icon-play
+    li.ui-state-default.ui-corner-all(title=".ui-icon-pause"): span.ui-icon.ui-icon-pause
+    li.ui-state-default.ui-corner-all(title=".ui-icon-stop"): span.ui-icon.ui-icon-stop
+    li.ui-state-default.ui-corner-all(title=".ui-icon-volume-off"): span.ui-icon.ui-icon-volume-off
+    li.ui-state-default.ui-corner-all(title=".ui-icon-volume-on"): span.ui-icon.ui-icon-volume-on
+    li.ui-state-default.ui-corner-all(title=".ui-icon-shuffle"): span.ui-icon.ui-icon-shuffle
+    li.ui-state-default.ui-corner-all(title=".ui-icon-eject"): span.ui-icon.ui-icon-eject
+    li.ui-state-default.ui-corner-all(title=".ui-icon-link"): span.ui-icon.ui-icon-link
+    li.ui-state-default.ui-corner-all(title=".ui-icon-extlink"): span.ui-icon.ui-icon-extlink
+    li.ui-state-default.ui-corner-all(title=".ui-icon-locked"): span.ui-icon.ui-icon-locked
+    li.ui-state-default.ui-corner-all(title=".ui-icon-unlocked"): span.ui-icon.ui-icon-unlocked
+    li.ui-state-default.ui-corner-all(title=".ui-icon-newwin"): span.ui-icon.ui-icon-newwin
+    li.ui-state-default.ui-corner-all(title=".ui-icon-home"): span.ui-icon.ui-icon-home
+    li.ui-state-default.ui-corner-all(title=".ui-icon-bookmark"): span.ui-icon.ui-icon-bookmark
+    li.ui-state-default.ui-corner-all(title=".ui-icon-star"): span.ui-icon.ui-icon-star
+    li.ui-state-default.ui-corner-all(title=".ui-icon-power"): span.ui-icon.ui-icon-power
+    li.ui-state-default.ui-corner-all(title=".ui-icon-refresh"): span.ui-icon.ui-icon-refresh
+    li.ui-state-default.ui-corner-all(title=".ui-icon-person"): span.ui-icon.ui-icon-person
+    li.ui-state-default.ui-corner-all(title=".ui-icon-heart"): span.ui-icon.ui-icon-heart
+    li.ui-state-default.ui-corner-all(title=".ui-icon-key"): span.ui-icon.ui-icon-key
+    li.ui-state-default.ui-corner-all(title=".ui-icon-lightbulb"): span.ui-icon.ui-icon-lightbulb
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cart"): span.ui-icon.ui-icon-cart
+    li.ui-state-default.ui-corner-all(title=".ui-icon-clock"): span.ui-icon.ui-icon-clock
+    li.ui-state-default.ui-corner-all(title=".ui-icon-comment"): span.ui-icon.ui-icon-comment
+    li.ui-state-default.ui-corner-all(title=".ui-icon-gear"): span.ui-icon.ui-icon-gear
+    li.ui-state-default.ui-corner-all(title=".ui-icon-flag"): span.ui-icon.ui-icon-flag
+    li.ui-state-default.ui-corner-all(title=".ui-icon-transfer-e-w"): span.ui-icon.ui-icon-transfer-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-transferthick-e-w"): span.ui-icon.ui-icon-transferthick-e-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-search"): span.ui-icon.ui-icon-search
+    li.ui-state-default.ui-corner-all(title=".ui-icon-wrench"): span.ui-icon.ui-icon-wrench
+    li.ui-state-default.ui-corner-all(title=".ui-icon-radio-on"): span.ui-icon.ui-icon-radio-on
+    li.ui-state-default.ui-corner-all(title=".ui-icon-suitcase"): span.ui-icon.ui-icon-suitcase
+    li.ui-state-default.ui-corner-all(title=".ui-icon-calculator"): span.ui-icon.ui-icon-calculator
+    li.ui-state-default.ui-corner-all(title=".ui-icon-calendar"): span.ui-icon.ui-icon-calendar
+    li.ui-state-default.ui-corner-all(title=".ui-icon-contact"): span.ui-icon.ui-icon-contact
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-closed"): span.ui-icon.ui-icon-mail-closed
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-open"): span.ui-icon.ui-icon-mail-open
+    li.ui-state-default.ui-corner-all(title=".ui-icon-pin-s"): span.ui-icon.ui-icon-pin-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-pin-w"): span.ui-icon.ui-icon-pin-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-zoomin"): span.ui-icon.ui-icon-zoomin
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-zoomin"): span.ui-icon.ui-icon-circle-zoomin
+    li.ui-state-default.ui-corner-all(title=".ui-icon-zoomout"): span.ui-icon.ui-icon-zoomout
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-zoomout"): span.ui-icon.ui-icon-circle-zoomout
+    li.ui-state-default.ui-corner-all(title=".ui-icon-battery-0"): span.ui-icon.ui-icon-battery-0
+    li.ui-state-default.ui-corner-all(title=".ui-icon-battery-1"): span.ui-icon.ui-icon-battery-1
+    li.ui-state-default.ui-corner-all(title=".ui-icon-battery-2"): span.ui-icon.ui-icon-battery-2
+    li.ui-state-default.ui-corner-all(title=".ui-icon-battery-3"): span.ui-icon.ui-icon-battery-3
+    li.ui-state-default.ui-corner-all(title=".ui-icon-signal"): span.ui-icon.ui-icon-signal
+    li.ui-state-default.ui-corner-all(title=".ui-icon-signal-diag"): span.ui-icon.ui-icon-signal-diag
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-arrow-n"): span.ui-icon.ui-icon-circle-b-arrow-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-arrow-e"): span.ui-icon.ui-icon-circle-b-arrow-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-arrow-s"): span.ui-icon.ui-icon-circle-b-arrow-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-arrow-w"): span.ui-icon.ui-icon-circle-b-arrow-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-n"): span.ui-icon.ui-icon-carat-2-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-e"): span.ui-icon.ui-icon-carat-2-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-s"): span.ui-icon.ui-icon-carat-2-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-carat-2-w"): span.ui-icon.ui-icon-carat-2-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-n-stop"): span.ui-icon.ui-icon-triangle-1-n-stop
+    li.ui-state-default.ui-corner-all(title=".ui-icon-triangle-1-s-stop"): span.ui-icon.ui-icon-triangle-1-s-stop
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-triangle-n"): span.ui-icon.ui-icon-circle-b-triangle-n
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-triangle-e"): span.ui-icon.ui-icon-circle-b-triangle-e
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-triangle-s"): span.ui-icon.ui-icon-circle-b-triangle-s
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-triangle-w"): span.ui-icon.ui-icon-circle-b-triangle-w
+    li.ui-state-default.ui-corner-all(title=".ui-icon-alert-b"): span.ui-icon.ui-icon-alert-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-help-plain"): span.ui-icon.ui-icon-help-plain
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-help"): span.ui-icon.ui-icon-circle-b-help
+    li.ui-state-default.ui-corner-all(title=".ui-icon-info-plain"): span.ui-icon.ui-icon-info-plain
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-info"): span.ui-icon.ui-icon-circle-b-info
+    li.ui-state-default.ui-corner-all(title=".ui-icon-notice-plain"): span.ui-icon.ui-icon-notice-plain
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-notice"): span.ui-icon.ui-icon-circle-b-notice
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-check"): span.ui-icon.ui-icon-circle-b-check
+    li.ui-state-default.ui-corner-all(title=".ui-icon-check-off"): span.ui-icon.ui-icon-check-off
+    li.ui-state-default.ui-corner-all(title=".ui-icon-check-on"): span.ui-icon.ui-icon-check-on
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-close"): span.ui-icon.ui-icon-circle-b-close
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-minus"): span.ui-icon.ui-icon-circle-b-minus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-b-plus"): span.ui-icon.ui-icon-circle-b-plus
+    li.ui-state-default.ui-corner-all(title=".ui-icon-undo"): span.ui-icon.ui-icon-undo
+    li.ui-state-default.ui-corner-all(title=".ui-icon-redo"): span.ui-icon.ui-icon-redo
+    li.ui-state-default.ui-corner-all(title=".ui-icon-rename"): span.ui-icon.ui-icon-rename
+    li.ui-state-default.ui-corner-all(title=".ui-icon-print-b"): span.ui-icon.ui-icon-print-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-table"): span.ui-icon.ui-icon-table
+    li.ui-state-default.ui-corner-all(title=".ui-icon-ticket"): span.ui-icon.ui-icon-ticket
+    li.ui-state-default.ui-corner-all(title=".ui-icon-audio"): span.ui-icon.ui-icon-audio
+    li.ui-state-default.ui-corner-all(title=".ui-icon-movie"): span.ui-icon.ui-icon-movie
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-pdf"): span.ui-icon.ui-icon-file-pdf
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-rtf"): span.ui-icon.ui-icon-file-rtf
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-spreadsheet"): span.ui-icon.ui-icon-file-spreadsheet
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-txt"): span.ui-icon.ui-icon-file-txt
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-word"): span.ui-icon.ui-icon-file-word
+    li.ui-state-default.ui-corner-all(title=".ui-icon-file-zip"): span.ui-icon.ui-icon-file-zip
+    li.ui-state-default.ui-corner-all(title=".ui-icon-volume-on-b"): span.ui-icon.ui-icon-volume-on-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-retweet"): span.ui-icon.ui-icon-retweet
+    li.ui-state-default.ui-corner-all(title=".ui-icon-link-broken"): span.ui-icon.ui-icon-link-broken
+    li.ui-state-default.ui-corner-all(title=".ui-icon-window"): span.ui-icon.ui-icon-window
+    li.ui-state-default.ui-corner-all(title=".ui-icon-window-minimize"): span.ui-icon.ui-icon-window-minimize
+    li.ui-state-default.ui-corner-all(title=".ui-icon-window-sidebar"): span.ui-icon.ui-icon-window-sidebar
+    li.ui-state-default.ui-corner-all(title=".ui-icon-menu"): span.ui-icon.ui-icon-menu
+    li.ui-state-default.ui-corner-all(title=".ui-icon-bookmark-b"): span.ui-icon.ui-icon-bookmark-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-star-b"): span.ui-icon.ui-icon-star-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-addon"): span.ui-icon.ui-icon-addon
+    li.ui-state-default.ui-corner-all(title=".ui-icon-plugin"): span.ui-icon.ui-icon-plugin
+    li.ui-state-default.ui-corner-all(title=".ui-icon-package"): span.ui-icon.ui-icon-package
+    li.ui-state-default.ui-corner-all(title=".ui-icon-group"): span.ui-icon.ui-icon-group
+    li.ui-state-default.ui-corner-all(title=".ui-icon-heart-b"): span.ui-icon.ui-icon-heart-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-heart-beat"): span.ui-icon.ui-icon-heart-beat
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cart-b"): span.ui-icon.ui-icon-cart-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-clock-b"): span.ui-icon.ui-icon-clock-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cloud"): span.ui-icon.ui-icon-cloud
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cloud-b"): span.ui-icon.ui-icon-cloud-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cloud-download"): span.ui-icon.ui-icon-cloud-download
+    li.ui-state-default.ui-corner-all(title=".ui-icon-cloud-upload"): span.ui-icon.ui-icon-cloud-upload
+    li.ui-state-default.ui-corner-all(title=".ui-icon-comments"): span.ui-icon.ui-icon-comments
+    li.ui-state-default.ui-corner-all(title=".ui-icon-globe"): span.ui-icon.ui-icon-globe
+    li.ui-state-default.ui-corner-all(title=".ui-icon-globe-b"): span.ui-icon.ui-icon-globe-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-location"): span.ui-icon.ui-icon-location
+    li.ui-state-default.ui-corner-all(title=".ui-icon-navigation"): span.ui-icon.ui-icon-navigation
+    li.ui-state-default.ui-corner-all(title=".ui-icon-gears"): span.ui-icon.ui-icon-gears
+    li.ui-state-default.ui-corner-all(title=".ui-icon-camera"): span.ui-icon.ui-icon-camera
+    li.ui-state-default.ui-corner-all(title=".ui-icon-eye"): span.ui-icon.ui-icon-eye
+    li.ui-state-default.ui-corner-all(title=".ui-icon-box"): span.ui-icon.ui-icon-box
+    li.ui-state-default.ui-corner-all(title=".ui-icon-sign-in"): span.ui-icon.ui-icon-sign-in
+    li.ui-state-default.ui-corner-all(title=".ui-icon-sign-out"): span.ui-icon.ui-icon-sign-out
+    li.ui-state-default.ui-corner-all(title=".ui-icon-toggle-off"): span.ui-icon.ui-icon-toggle-off
+    li.ui-state-default.ui-corner-all(title=".ui-icon-toggle-on"): span.ui-icon.ui-icon-toggle-on
+    li.ui-state-default.ui-corner-all(title=".ui-icon-settings"): span.ui-icon.ui-icon-settings
+    li.ui-state-default.ui-corner-all(title=".ui-icon-selectbox"): span.ui-icon.ui-icon-selectbox
+    li.ui-state-default.ui-corner-all(title=".ui-icon-truck"): span.ui-icon.ui-icon-truck
+    li.ui-state-default.ui-corner-all(title=".ui-icon-database"): span.ui-icon.ui-icon-database
+    li.ui-state-default.ui-corner-all(title=".ui-icon-databases"): span.ui-icon.ui-icon-databases
+    li.ui-state-default.ui-corner-all(title=".ui-icon-book"): span.ui-icon.ui-icon-book
+    li.ui-state-default.ui-corner-all(title=".ui-icon-book-b"): span.ui-icon.ui-icon-book-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-calculator-b"): span.ui-icon.ui-icon-calculator-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-calendar-b"): span.ui-icon.ui-icon-calendar-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-calendar-day"): span.ui-icon.ui-icon-calendar-day
+    li.ui-state-default.ui-corner-all(title=".ui-icon-address"): span.ui-icon.ui-icon-address
+    li.ui-state-default.ui-corner-all(title=".ui-icon-phone"): span.ui-icon.ui-icon-phone
+    li.ui-state-default.ui-corner-all(title=".ui-icon-circle-phone"): span.ui-icon.ui-icon-circle-phone
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-reply"): span.ui-icon.ui-icon-mail-reply
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-replyall"): span.ui-icon.ui-icon-mail-replyall
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-forward"): span.ui-icon.ui-icon-mail-forward
+    li.ui-state-default.ui-corner-all(title=".ui-icon-mail-send"): span.ui-icon.ui-icon-mail-send
+    li.ui-state-default.ui-corner-all(title=".ui-icon-newspaper"): span.ui-icon.ui-icon-newspaper
+    li.ui-state-default.ui-corner-all(title=".ui-icon-screen-display"): span.ui-icon.ui-icon-screen-display
+    li.ui-state-default.ui-corner-all(title=".ui-icon-screen-laptop"): span.ui-icon.ui-icon-screen-laptop
+    li.ui-state-default.ui-corner-all(title=".ui-icon-screen-mobile"): span.ui-icon.ui-icon-screen-mobile
+    li.ui-state-default.ui-corner-all(title=".ui-icon-view-icons"): span.ui-icon.ui-icon-view-icons
+    li.ui-state-default.ui-corner-all(title=".ui-icon-view-icons-b"): span.ui-icon.ui-icon-view-icons-b
+    li.ui-state-default.ui-corner-all(title=".ui-icon-view-list"): span.ui-icon.ui-icon-view-list
+    li.ui-state-default.ui-corner-all(title=".ui-icon-sorting"): span.ui-icon.ui-icon-sorting
+    li.ui-state-default.ui-corner-all(title=".ui-icon-sorting-asc"): span.ui-icon.ui-icon-sorting-asc
+    li.ui-state-default.ui-corner-all(title=".ui-icon-sorting-desc"): span.ui-icon.ui-icon-sorting-desc
+
+h2.header-demo Slider
+#slider.offset
+
+h2.header-demo Datepicker
+#datepicker
+br
+input#datepicker-input(type="text")
+
+h2.header-demo Progressbar
+#progressbar
+
+h2.header-demo Selectmenu
+select#selectmenu
+    optgroup(label="Grays")
+        option Dark Gray
+        option Gray
+        option Light Gray
+
+    optgroup(label="Colors")
+        option Red
+        option(selected) Orange
+        option Blue
+
+h2.header-demo Spinner
+input#spinner
+
+
+h2.header-demo Menu
+ul#menu
+    li: .ui-menu-item-wrapper Item 1
+    li: .ui-menu-item-wrapper Item 2
+    li
+        .ui-menu-item-wrapper Item 3
+        ul
+            li: .ui-menu-item-wrapper Item 3.1
+            li: .ui-menu-item-wrapper Item 3.2
+            li
+                .ui-menu-item-wrapper Item 3.3
+                ul
+                    li: .ui-menu-item-wrapper Item 3.3.1
+                    li: .ui-menu-item-wrapper Item 3.3.2
+                    li: .ui-menu-item-wrapper Item 3.3.3
+                    li: .ui-menu-item-wrapper Item 3.3.4
+                    li: .ui-menu-item-wrapper Item 3.3.5
+
+            li: .ui-menu-item-wrapper Item 3.4
+            li: .ui-menu-item-wrapper Item 3.5
+
+    li.ui-menu-divider
+    li: .ui-menu-item-wrapper Item 4
+    li: .ui-menu-item-wrapper Item 5
+
+h2.header-demo Tooltip
+p#tooltip
+    a(href="#", title="That&apos;s what this widget is") Tooltips
+    |  can be attached to any element. When you hover the element with
+    | your mouse, the title attribute is displayed in a little box next
+    | to the element, just like a native tooltip.
+
+h2.header-demo States
+- var stateCounter = 0;
+- ['default', 'hover', 'focus', 'active', 'highlight', 'error'].forEach(function (state) {
+    .ui-widget: .ui-corner-all.state-demo(class='ui-state-' + state): p
+        strong Hey!
+        |  Sample ui-state-#{state} style.
+- });

@@ -1,0 +1,44 @@
+@mixin ui-state-container {
+  &,
+  .ui-widget-content &,
+  .ui-widget-header & {
+    @content;
+  }
+}
+
+@mixin ui-state-link($color, $text-decoration: none) {
+  &,
+  a {
+    &,
+    &:active,
+    &:hover,
+    &:focus {
+      color: $color;
+
+      @if $text-decoration {
+        text-decoration: $text-decoration;
+      }
+    }
+  }
+}
+
+@mixin ui-state-text($color) {
+  &-text {
+    @include ui-state-container {
+      color: $color;
+    }
+  }
+}
+
+@mixin ui-state($border-color, $background, $color) {
+  @include ui-state-container {
+    border: $ui-states-border-width solid $border-color;
+    background: $background;
+    color: $color;
+    font-weight: normal;
+
+    @include ui-state-link($color);
+  }
+
+  @include ui-state-text($color);
+}

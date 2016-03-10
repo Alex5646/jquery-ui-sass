@@ -1,0 +1,21 @@
+// Dialog
+.ui-dialog .ui-resizable-handle.ui-resizable-se {
+  color: $ui-dialog-titlebar-background;
+}
+
+// Tabs
+.ui-tabs-nav > li {
+  &.ui-state-default {
+    @include ui-state($ui-gray-lighter, $ui-gray-lighter, $ui-text-color);
+    border-bottom-color: $theme-brand-primary !important;
+  }
+
+  &.ui-state-hover {
+    @include ui-state($ui-gray-light, $ui-gray-light, $ui-text-color);
+  }
+
+  &.ui-state-active {
+    @include ui-state($theme-brand-primary, $theme-brand-primary, #fff);
+  }
+}
+

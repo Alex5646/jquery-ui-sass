@@ -1,0 +1,72 @@
+.ui-slider {
+  position: relative;
+  text-align: left;
+  background: $ui-slider-background;
+  border: $ui-slider-border;
+
+  &-handle {
+    position: absolute;
+    z-index: 2;
+    width: $ui-slider-handle-size;
+    height: $ui-slider-handle-size;
+    cursor: pointer;
+    touch-action: none;
+    @include ui-transition($ui-slider-handle-transition);
+  }
+
+  &-range {
+    position: absolute;
+    z-index: 1;
+    font-size: $ui-slider-range-font-size;
+    display: block;
+    border: 0;
+    background: $ui-slider-range-background;
+    border: $ui-slider-range-border;
+  }
+
+  &-horizontal {
+    height: $ui-slider-horizontal-height;
+
+    .ui-slider-handle {
+      top: $ui-slider-horizontal-handle-top;
+      margin-left: $ui-slider-horizontal-handle-margin-left;
+    }
+
+    .ui-slider-range {
+      top: 0;
+      height: 100%;
+    }
+
+    .ui-slider-range-min {
+      left: 0;
+    }
+
+    .ui-slider-range-max {
+      right: 0;
+    }
+  }
+
+  &-vertical {
+    width: $ui-slider-vertical-width;
+    height: $ui-slider-vertical-height;
+
+    .ui-slider-handle {
+      left: $ui-slider-vertical-handle-top;
+      margin-left: 0;
+      margin-bottom: $ui-slider-vertical-handle-margin-bottom;
+    }
+
+    .ui-slider-range {
+      left: 0;
+      width: 100%;
+    }
+
+    .ui-slider-range-min {
+      bottom: 0;
+    }
+
+    .ui-slider-range-max {
+      top: 0;
+    }
+  }
+}

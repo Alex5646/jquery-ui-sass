@@ -1,0 +1,24 @@
+.ui-progressbar {
+  height: $ui-progressbar-height;
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: $ui-progressbar-spacing;
+  background: $ui-progressbar-background;
+  border: $ui-progressbar-border;
+
+  &-value {
+    margin: -$ui-widget-border-width;
+    background: $ui-progressbar-value-background;
+    border: $ui-progressbar-value-border;
+    height: 100%;
+  }
+
+  &-overlay {
+    height: 100%;
+    opacity: $ui-progressbar-overlay-opacity;
+  }
+
+  &-indeterminate &-value {
+    background-image: none;
+  }
+}

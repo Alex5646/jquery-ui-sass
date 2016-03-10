@@ -1,0 +1,52 @@
+.ui-selectmenu {
+
+  &-menu {
+    display: none;
+    position: absolute;
+    z-index: $ui-zindex-selectmenu !important;
+
+    .ui-menu {
+      overflow: auto;
+      overflow-x: hidden;
+      margin: 0;
+
+      .ui-selectmenu-optgroup {
+        font-size: $ui-selectmenu-optgroup-font-size;
+        font-weight: $ui-selectmenu-optgroup-font-weight;
+        line-height: $ui-selectmenu-optgroup-line-height;
+        padding: $ui-selectmenu-optgroup-padding-v $ui-selectmenu-optgroup-padding-h;
+        height: auto;
+        margin: $ui-selectmenu-optgroup-margin;
+        color: $ui-selectmenu-optgroup-color;
+      }
+    }
+  }
+
+  &-open {
+    display: block;
+  }
+
+  &-button {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    padding: $ui-selectmenu-button-padding-v $ui-selectmenu-button-padding-h;
+    line-height: $ui-selectmenu-button-line-height;
+    @include ui-transition($ui-selectmenu-button-transition);
+
+    span {
+      &.ui-icon {
+        float: right;
+      }
+
+      &.ui-selectmenu-text {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

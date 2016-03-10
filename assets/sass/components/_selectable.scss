@@ -1,0 +1,9 @@
+.ui-selectable {
+  touch-action: none;
+
+  &-helper {
+    position: absolute;
+    z-index: 100;
+    border: $ui-selectable-border;
+  }
+}

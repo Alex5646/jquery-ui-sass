@@ -1,0 +1,26 @@
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: $ui-button-padding-v $ui-button-padding-h;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  overflow: visible;
+  touch-action: manipulation;
+  @include ui-font($ui-button-font-size, $ui-button-line-height, $ui-button-font-weight);
+  @include ui-transition($ui-button-transition);
+
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.ui-button-icon-only {
+  .ui-button-text {
+    display: none;
+  }
+}

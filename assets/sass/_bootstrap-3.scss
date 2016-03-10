@@ -1,0 +1,113 @@
+.ui-state-active {
+  @include ui-box-shadow(inset 0 3px 5px rgba(black, 0.125));
+}
+
+// Accordion
+.ui-accordion-header,
+.ui-accordion-content {
+  @include ui-box-shadow(0 1px 1px rgba(black, 0.05));
+}
+
+.ui-accordion-header {
+  &.ui-state-default,
+  &.ui-state-hover,
+  &.ui-state-focus,
+  &.ui-state-active {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+  }
+}
+
+// Datepicker
+.ui-datepicker-calendar {
+  .ui-state-default {
+    border-color: transparent;
+    background: transparent;
+    @include ui-border-radius($ui-border-radius);
+  }
+
+  .ui-state-hover {
+    background: $ui-gray-lighter;
+  }
+
+  .ui-state-highlight {
+    color: #428bca;
+  }
+
+  .ui-state-active {
+    @include ui-box-shadow(none);
+    background: #428bca;
+    color: #fff;
+  }
+}
+
+// Dialog
+.ui-dialog-titlebar-close {
+  @include ui-transition(opacity $ui-transition);
+
+  &.ui-state-default {
+    background: transparent;
+    @include ui-box-shadow(none);
+    border-color: transparent;
+    opacity: 0.25;
+  }
+
+  &.ui-state-hover {
+    opacity: 1;
+  }
+}
+
+// Menu
+.ui-menu-item.ui-state-active {
+  @include ui-box-shadow(none);
+}
+
+// Progressbar & Slider
+.ui-slider,
+.ui-progressbar {
+  @include ui-border-radius($ui-border-radius);
+  @include ui-box-shadow(inset 0 1px 2px rgba(black, 0.1));
+}
+
+.ui-slider-range,
+.ui-progressbar-value {
+  @include ui-box-shadow(inset 0 -1px 0 rgba(black, 0.15));
+}
+
+// Spinner
+.ui-spinner-input {
+  @include ui-box-shadow(inset 0 1px 1px rgba(black, 0.075));
+
+  &:focus {
+    @include ui-box-shadow(inset 0 1px 1px rgba(black, 0.075), 0 0 8px rgba(#66afe9, 0.6));
+  }
+}
+
+// Tabs
+.ui-tabs-nav {
+  > li {
+    &.ui-state-default {
+      border-color: transparent transparent $ui-tabs-nav-border-color;
+      @include ui-state-link(#428bca);
+    }
+
+    &.ui-state-hover {
+      background: #eee;
+      @include ui-state-link(#2a6496);
+    }
+
+    &.ui-state-active {
+      background: #fff;
+      @include ui-state-link(#555);
+      @include ui-box-shadow(none);
+      border-color: $ui-tabs-nav-border-color $ui-tabs-nav-border-color #fff;
+    }
+  }
+}
+
+// Tooltip
+.ui-tooltip {
+  @include ui-box-shadow(none);
+}
+

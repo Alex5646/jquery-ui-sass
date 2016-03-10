@@ -1,0 +1,14 @@
+.ui-buttonset {
+  @include ui-clearfix;
+
+  .ui-button {
+    float: left;
+    margin-right: -1px;
+
+    &.ui-state-active,
+    &.ui-state-focus,
+    &.ui-state-hover {
+      z-index: 100;
+    }
+  }
+}

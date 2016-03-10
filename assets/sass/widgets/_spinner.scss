@@ -1,0 +1,68 @@
+.ui-spinner {
+  position: relative;
+  display: $ui-spinner-display;
+  padding: 0;
+  vertical-align: middle;
+  border: none;
+
+  &-input {
+    position: relative;
+    background: $ui-spinner-input-background;
+    height: $ui-spinner-input-height;
+    color: $ui-spinner-input-color;
+    margin: 0;
+    padding: $ui-spinner-input-padding-v $ui-spinner-input-padding-h;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: $ui-spinner-input-width;
+    z-index: 20;
+    border: $ui-spinner-input-border-width solid $ui-spinner-input-border-color;
+    @include ui-font($ui-spinner-input-font-size, $ui-spinner-input-line-height, $ui-spinner-input-font-weight);
+    @include ui-transition($ui-spinner-input-transition);
+    @include ui-border-left-radius($ui-border-radius);
+
+    &:focus {
+      outline: 0;
+      border-color: $ui-spinner-input-focus-border-color;
+    }
+  }
+
+  &-button {
+    width: $ui-spinner-button-width;
+    height: calc(50% - #{$ui-border-width * 2});
+    font-size: $ui-spinner-button-font-size;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    right: 0;
+  }
+
+  // vertically center icon
+  .ui-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &-up {
+    top: 0;
+
+    .ui-icon {
+      top: $ui-spinner-button-up-icon-top;
+    }
+  }
+
+  &-down {
+    bottom: 0;
+    border-top: 0;
+    padding-top: 1px;
+
+    .ui-icon {
+      top: $ui-spinner-button-down-icon-top;
+    }
+  }
+}
