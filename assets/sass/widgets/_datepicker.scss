@@ -28,8 +28,19 @@
     top: $ui-datepicker-header-nav-position-v;
     width: $ui-datepicker-header-nav-size;
     height: $ui-datepicker-header-nav-size;
+    line-height: $ui-datepicker-header-nav-size;
     @include ui-transition($ui-datepicker-header-nav-transition);
     cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: $ui-datepicker-header-color;
+      top: $ui-datepicker-header-nav-icon-top;
+    }
   }
 
   &-prev {
@@ -38,16 +49,6 @@
 
   &-next {
     right: $ui-datepicker-header-nav-position-h;
-  }
-
-  &-prev span,
-  &-next span {
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -8px;
-    top: 50%;
-    margin-top: -8px;
   }
 
   &-title {

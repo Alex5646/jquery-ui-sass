@@ -58,18 +58,8 @@
   }
 }
 
-// Resizable
-.ui-resizable-handle {
-  @include ui-transition(opacity $ui-transition);
-  opacity: 0.25;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 // Menu
-.ui-menu-item-wrapper.ui-state-active {
+.ui-menu-item.ui-state-active {
   @include ui-box-shadow(none);
 }
 
@@ -95,22 +85,24 @@
 }
 
 // Tabs
-.ui-tabs-tab {
-  &.ui-state-default {
-    border-color: transparent transparent $ui-tabs-nav-border-color;
-    @include ui-state-link(#428bca);
-  }
+.ui-tabs-nav {
+  > li {
+    &.ui-state-default {
+      border-color: transparent transparent $ui-tabs-nav-border-color;
+      @include ui-state-link(#428bca);
+    }
 
-  &.ui-state-hover {
-    background: #eee;
-    @include ui-state-link(#2a6496);
-  }
+    &.ui-state-hover {
+      background: #eee;
+      @include ui-state-link(#2a6496);
+    }
 
-  &.ui-state-active {
-    background: #fff;
-    @include ui-state-link(#555);
-    @include ui-box-shadow(none);
-    border-color: $ui-tabs-nav-border-color $ui-tabs-nav-border-color #fff;
+    &.ui-state-active {
+      background: #fff;
+      @include ui-state-link(#555);
+      @include ui-box-shadow(none);
+      border-color: $ui-tabs-nav-border-color $ui-tabs-nav-border-color #fff;
+    }
   }
 }
 

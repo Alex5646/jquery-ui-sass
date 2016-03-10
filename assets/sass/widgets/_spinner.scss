@@ -29,7 +29,7 @@
 
   &-button {
     width: $ui-spinner-button-width;
-    height: 50%;
+    height: calc(50% - #{$ui-border-width * 2});
     font-size: $ui-spinner-button-font-size;
     padding: 0;
     margin: 0;
@@ -39,25 +39,30 @@
     display: block;
     overflow: hidden;
     right: 0;
-
-    .ui-icon {
-      margin: auto;
-    }
   }
 
   // vertically center icon
   .ui-icon {
     position: absolute;
-    margin-top: -8px;
-    top: 50%;
-    left: ($ui-spinner-button-width - $ui-spinner-button-font-size) / 2;
+    left: 0;
+    right: 0;
   }
 
   &-up {
     top: 0;
+
+    .ui-icon {
+      top: $ui-spinner-button-up-icon-top;
+    }
   }
 
   &-down {
     bottom: 0;
+    border-top: 0;
+    padding-top: 1px;
+
+    .ui-icon {
+      top: $ui-spinner-button-down-icon-top;
+    }
   }
 }

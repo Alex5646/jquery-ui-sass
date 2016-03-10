@@ -17,18 +17,18 @@
   &-item {
     margin: 0;
     cursor: pointer;
-  }
-
-  &-item-wrapper {
     position: relative;
-    padding: $ui-menu-item-wrapper-padding-v $ui-menu-item-wrapper-padding-h;
+    padding: $ui-menu-item-padding-v $ui-menu-item-padding-h;
     border: $ui-border-width solid transparent;
-    @include ui-transition($ui-menu-item-wrapper-transition);
+    @include ui-transition($ui-menu-item-transition);
 
-    &.ui-state-active {
+    &.ui-state-active,
+    &.ui-state-focus {
       border-color: transparent;
-      background: $ui-menu-item-wrapper-background;
-      color: $ui-menu-item-wrapper-color;
+      background: $ui-menu-item-active-background;
+      @include ui-state-link($ui-menu-item-active-color);
+      outline: none;
+
     }
   }
 

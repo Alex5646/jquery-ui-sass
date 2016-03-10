@@ -1,4 +1,11 @@
 extends _master
 
 block container
-    include ../partials/_demo
+    .row
+        .col-md-2
+            ul.nav.nav-pills.nav-stacked
+                li: a.dropdown-item(href="/default.html") Default
+                li: a.dropdown-item(href="/bootstrap-3.html") Bootstrap 3
+                li: a.dropdown-item(href="/metro.html") Metro
+        .col-md-10
+            include ../partials/_demo

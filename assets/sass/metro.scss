@@ -116,7 +116,7 @@ $ui-priority-secondary-font-weight: normal !default;
 // 6. Icons
 // ---------------------------------------------------------
 $ui-icon-font-path: '../fonts/' !default;
-$ui-icon-font-name: 'jquery-ui-icons' !default;
+$ui-icon-font-name: 'jquery-ui' !default;
 
 // 7. Corner radius
 // ---------------------------------------------------------
@@ -174,6 +174,7 @@ $ui-datepicker-header-nav-size:         24px !default;
 $ui-datepicker-header-nav-transition:   $ui-button-transition !default;
 $ui-datepicker-header-nav-position-v:   calc(50% - #{$ui-datepicker-header-nav-size / 2}) !default;
 $ui-datepicker-header-nav-position-h:   10px !default;
+$ui-datepicker-header-nav-icon-top:     calc(50% - #{$ui-datepicker-header-nav-size / 2}) !default;
 
 $ui-datepicker-select-offset:           10px !default;
 
@@ -227,12 +228,12 @@ $ui-menu-border-color:            $theme-brand-primary !default;
 $ui-menu-spacing:                 $ui-spacing !default;
 $ui-menu-border-border-width:     $ui-border-width * 2 !default;
 
-$ui-menu-item-wrapper-padding-v:  $ui-padding-v !default;
-$ui-menu-item-wrapper-padding-h:  $ui-padding-h !default;
-$ui-menu-item-wrapper-transition: $ui-button-transition !default;
+$ui-menu-item-padding-v:          $ui-padding-v !default;
+$ui-menu-item-padding-h:          $ui-padding-h !default;
+$ui-menu-item-transition:         $ui-button-transition !default;
 
-$ui-menu-item-wrapper-background: $theme-brand-primary !default;
-$ui-menu-item-wrapper-color:      #ffffff !default;
+$ui-menu-item-active-background:  $theme-brand-primary !default;
+$ui-menu-item-active-color:       #ffffff !default;
 
 $ui-menu-divider-margin-v:        10px !default;
 $ui-menu-divider-border:          $ui-border-width * 2 solid $theme-brand-primary !default;
@@ -259,8 +260,8 @@ $ui-selectmenu-optgroup-font-size:   $ui-font-size !default;
 $ui-selectmenu-optgroup-font-weight: bold !default;
 $ui-selectmenu-optgroup-color:       $ui-text-color !default;
 $ui-selectmenu-optgroup-line-height: $ui-line-height !default;
-$ui-selectmenu-optgroup-padding-v:   $ui-menu-item-wrapper-padding-v !default;
-$ui-selectmenu-optgroup-padding-h:   $ui-menu-item-wrapper-padding-h !default;
+$ui-selectmenu-optgroup-padding-v:   $ui-menu-item-padding-v !default;
+$ui-selectmenu-optgroup-padding-h:   $ui-menu-item-padding-h !default;
 $ui-selectmenu-optgroup-margin:      ($ui-menu-divider-margin-v - ($ui-selectmenu-optgroup-padding-v * 2)) 0 $ui-menu-divider-margin-v !default;
 
 $ui-selectmenu-button-padding-v:     $ui-button-padding-v !default;
@@ -282,7 +283,7 @@ $ui-slider-handle-transition:             $ui-button-transition !default;
 
 $ui-slider-horizontal-height:             $ui-progressbar-height !default;
 
-$ui-slider-horizontal-handle-top:         calc(50% - #{$ui-slider-handle-size / 2}) !default;
+$ui-slider-horizontal-handle-top:         calc(50% - #{$ui-slider-handle-size / 2 + $ui-border-width}) !default;
 $ui-slider-horizontal-handle-margin-left: $ui-slider-handle-size / -2 !default;
 
 $ui-slider-vertical-width:                $ui-slider-horizontal-height !default;
@@ -296,7 +297,10 @@ $ui-slider-vertical-handle-margin-bottom: $ui-slider-handle-size / -2 !default;
 $ui-spinner-display:                  inline-block !default;
 
 $ui-spinner-button-width:             25px !default;
-$ui-spinner-button-font-size:         15px !default;
+$ui-spinner-button-font-size:         6px !default;
+
+$ui-spinner-button-up-icon-top:       -2px !default;
+$ui-spinner-button-down-icon-top:     -2px !default;
 
 $ui-spinner-input-padding-v:          $ui-padding-v !default;
 $ui-spinner-input-padding-h:          $ui-padding-h !default;
