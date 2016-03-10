@@ -1,5 +1,8 @@
 {
-  "private": true,
+  "name": "jquery-ui-sass",
+  "version": "0.0.1",
+  "description": "JQuery UI SASS\r ==============",
+  "main": "assets/sass/jquery-ui.scss",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "gulp": "^3.8.8",
@@ -10,5 +13,22 @@
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-jade": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex5646/jquery-ui-sass.git"
+  },
+  "author": "Alex5646 <catia.petrowi4@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alex5646/jquery-ui-sass/issues"
+  },
+  "homepage": "https://github.com/Alex5646/jquery-ui-sass#readme",
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "jquery-ui": "^1.10.5"
   }
 }
