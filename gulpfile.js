@@ -5,12 +5,12 @@ var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     plumber      = require('gulp-plumber'),
-    jade         = require('gulp-jade');
+    pug          = require('gulp-pug');
 
-gulp.task('jade', function () {
-    gulp.src('./assets/jade/**/[^_]*.jade')
+gulp.task('pug', function () {
+    gulp.src('./assets/pug/**/[^_]*.pug')
         .pipe(plumber())
-        .pipe(jade())
+        .pipe(pug())
         .pipe(gulp.dest('./'));
 });
 
@@ -29,7 +29,8 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./assets/sass/**/*.{sass,scss}', ['css']);
-    gulp.watch('./assets/jade/**/*.jade', ['jade'])
+    gulp.watch('./assets/pug/**/*.pug', ['pug'])
 });
 
-gulp.task('default', ['watch', 'js', 'css', 'jade']);
+gulp.task('default', ['watch', 'js', 'css', 'pug']);
+gulp.task('build', ['css', 'pug']);
