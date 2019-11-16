@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Alex5646/jquery-ui-sass#readme",
   "dependencies": {
-    "jquery": "^2.2.1",
+    "jquery": "^3.4.1",
     "jquery-ui": "^1.10.5"
   }
 }
